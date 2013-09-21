@@ -1,7 +1,16 @@
---- new_ToDoList	2013-06-08 14:41:37.516471074 -0400
-+++ ToDoList	2013-06-08 14:46:39.268467685 -0400
-@@ -7,3 +7,4 @@
+--- ToDoList	2013-06-21 23:39:29.785082006 -0400
++++ new_ToDoList	2013-06-22 10:20:03.567192828 -0400
+@@ -1,9 +1,10 @@
+ TO DO:
+ 
+-weep floors
+-water pants
++sweep floors
++water plants
+ eat lunch
  wash dishes
- fall asleep
- give talk about open source tools
-+CHANGES!!!!
+-sort male
++sort mail
+ take nap
++do diff and patch demo
+ 
