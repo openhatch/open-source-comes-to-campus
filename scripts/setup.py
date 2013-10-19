@@ -6,4 +6,7 @@ setup(
     install_requires=[
         'github3.py',
         ],
+    packages=[
+        'clone_github_issues',
+        ]
     )
