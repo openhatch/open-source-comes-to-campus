@@ -1,8 +1,20 @@
 import requests
 import requests.auth
 import urllib
+import json
+import sh
+import tempfile
+import subprocess
 
 OAUTH_BASIC_CREDS = open('settings.txt').read().strip()
+def _make_auth():
+    auth = requests.auth.HTTPBasicAuth(OAUTH_BASIC_CREDS,
+                                       'x-oauth-basic')
+    return auth
+
+def sanity_check_creds(oauth_basic_creds):
+    resp = requests.get('https://api.github.com/user', auth=_make_auth())
+    assert resp.json()['login']
 
 def make_issues_url(owner, repo):
     url = 'https://api.github.com/repos/%s/%s/issues' % (
@@ -10,9 +22,7 @@ def make_issues_url(owner, repo):
         urllib.quote(repo))
     return url
 
-def get_source_issues():
-    from_owner = 'openhatch'
-    from_repo = 'github-website-editing-demo'
+def get_source_issues(from_owner, from_repo):
     url = make_issues_url(from_owner, from_repo)
     all_issues = requests.get(url)
     return all_issues
@@ -24,18 +34,101 @@ def copy_en_masse(response, new_owner, new_name):
 
 def copy_issue_to(oauth_basic_creds, repo_owner, repo_name,
                   title, body):
-    auth = requests.auth.HTTPBasicAuth(OAUTH_BASIC_CREDS,
-                                       'x-oauth-basic')
     url = make_issues_url(repo_owner, repo_name)
     data = {'title': title,
             'body': body}
-    response = requests.post(url, auth=auth, data=data)
-    assert response.status_code == 200
+    response = requests.post(url, auth=_make_auth(), data=json.dumps(data))
+    assert response.status_code == 201
 
-def make_repo(oauth_basic_creds, repo_owner, repo_name,
-              for_org=True):
+def make_repo(repo_owner, repo_name, for_org=True):
     assert for_org # NOTE: URL below doesn't work for non-org repos
     url = 'https://api.github.com/orgs/%s/repos' % (
         urllib.quote(repo_owner),)
-    response = requests.post(url, data={'name': repo_name})
-    assert response.status_code == 200
+    response = requests.post(url, auth=_make_auth(), data=json.dumps({'name': repo_name}))
+    assert response.status_code == 201 # 201 means created
+
+
+def repo_exists(repo_owner, repo_name):
+    url = 'https://api.github.com/repos/%s/%s' % (
+        urllib.quote(repo_owner), urllib.quote(repo_name),)
+    response = requests.get(url, auth=_make_auth())
+    return (response.status_code == 200)
+
+
+def repo_has_commits(repo_owner, repo_name):
+    url = 'https://api.github.com/repos/%s/%s/branches' % (
+        urllib.quote(repo_owner), urllib.quote(repo_name),)
+    response = requests.get(url, auth=_make_auth())
+    if response.status_code == 200:
+        return bool(response.json())
+    else:
+        assert response.status_code == 404
+        return False
+
+def _print(s):
+    print s
+
+### FIXME: Someone needs to go through this and make the function names make
+### sense. Sorry to everyone who reads this before I do that.
+
+def interactive_prepare_event(event_name, how_many_to_create):
+    print ("Now is a good time to go create %d Github organizations, "
+           "starting with '%s-'." % (how_many_to_create, event_name))
+    raw_input("Press enter when you have done that...")
+
+    from_owner = 'openhatch'
+    from_repo = 'github-website-editing-demo'
+    print ("Great! Now I will go copy GitHub issues from the %s organization "
+           "and its %s repo." % (from_owner, from_repo))
+
+    print "First, I will download them..."
+    issues = get_source_issues(from_owner, from_repo)
+
+    print "And then, I will copy them..."
+
+    for i in range(how_many_to_create):
+        repo_number = i+1 # This is because we use 1-indexing in
+        # the name of the repo, e.g. columbia-1.github.io
+
+        org_name = "%s-%d" % (event_name, repo_number)
+        repo_name = "%s.github.io" % (org_name,)
+
+        if repo_exists(org_name, repo_name):
+            print "Weirdly, %s/%s already exists. Skipping this number." % (
+                org_name, repo_name)
+            continue
+
+        make_repo(org_name, repo_name)
+        copy_en_masse(issues, org_name, repo_name)
+
+    print ("Now I will make sure they all "
+           "have the content from the template repository.")
+
+
+    ### prepare a git clone of template repo
+    tempdir = tempfile.mkdtemp(prefix='git_clone_')
+    print "Using %s as temp directory for clone..." % (tempdir,)
+    sh.git('clone', 'git@github.com:%s/%s.git' % (from_owner, from_repo),
+           tempdir, _out=_print)
+
+    for i in range(how_many_to_create):
+        repo_number = i+1 # This is because we use 1-indexing in
+        # the name of the repo, e.g. columbia-1.github.io
+
+        org_name = "%s-%d" % (event_name, repo_number)
+        repo_name = "%s.github.io" % (org_name,)
+
+        if repo_has_commits(org_name, repo_name):
+            print (
+                "Odd: %s/%s seems to already have content in it. Skipping." % (
+                    org_name, repo_name))
+            continue
+
+
+        argv = ['git', 'remote', 'add', str(repo_number), 'git@github.com:%s/%s.git' % ( 
+                org_name, repo_name)]
+        print subprocess.check_output(argv, cwd=tempdir)
+        print subprocess.check_output(['git', 'push', str(repo_number), 'HEAD:master'],
+                                      cwd=tempdir)
+
+    print "Okay! It's all done."
