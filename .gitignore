@@ -1,1 +1,11 @@
 *.~lock*
+
+*.pyc
+
+scripts/settings.txt
+
+scripts/lib
+scripts/bin
+scripts/local
+scripts/include
+scripts/*.egg-info
