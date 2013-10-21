@@ -132,3 +132,17 @@ def interactive_prepare_event(event_name, how_many_to_create):
                                       cwd=tempdir)
 
     print "Okay! It's all done."
+
+
+def main():
+    print "Testing that your credentials work..."
+    sanity_check_creds(_make_auth())
+    print "Good."
+    print ""
+
+    event_name = raw_input("What is the event shortname? This is the "
+                           "name used on the web, e.g. for "
+                           "columbia.openhatch.org, type columbia here. >")
+    how_many = int(raw_input("How many git repositories do you want? "
+                             "I recommend no fewer than 3. Up to you, though. >"))
+    interactive_prepare_event(event_name, how_many)

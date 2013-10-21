@@ -9,5 +9,10 @@ setup(
         ],
     packages=[
         'clone_github_issues',
-        ]
-    )
+        ],
+    entry_points={
+        'console_scripts':
+            ['setup_practicing_git = clone_github_issues:main',
+             ]
+        }
+)
