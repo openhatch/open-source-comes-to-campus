@@ -6,8 +6,8 @@ import sh
 import tempfile
 import subprocess
 
-OAUTH_BASIC_CREDS = open('settings.txt').read().strip()
 def _make_auth():
+    OAUTH_BASIC_CREDS = open('settings.txt').read().strip()
     auth = requests.auth.HTTPBasicAuth(OAUTH_BASIC_CREDS,
                                        'x-oauth-basic')
     return auth
