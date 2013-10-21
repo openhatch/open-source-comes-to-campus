@@ -29,11 +29,10 @@ def get_source_issues(from_owner, from_repo):
 
 def copy_en_masse(response, new_owner, new_name):
     for item in response.json():
-        copy_issue_to(OAUTH_BASIC_CREDS, new_owner, new_name,
+        copy_issue_to(new_owner, new_name,
                       item['title'], item['body'])
 
-def copy_issue_to(oauth_basic_creds, repo_owner, repo_name,
-                  title, body):
+def copy_issue_to(repo_owner, repo_name, title, body):
     url = make_issues_url(repo_owner, repo_name)
     data = {'title': title,
             'body': body}
