@@ -4,7 +4,8 @@ setup(
     name='CloneGithubIssues',
     version='0.01',
     install_requires=[
-        'github3.py',
+        'sh',
+        'requests',
         ],
     packages=[
         'clone_github_issues',
