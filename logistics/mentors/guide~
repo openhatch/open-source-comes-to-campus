@@ -1,0 +1,50 @@
+= How to help - a guide for mentors at OSCTC events =
+
+Hi!  Thank you so much for volunteering to help at our Open Source Comes to Campus event!
+
+You may be wondering what, specifically, we're expecting of you and what you can do to prepare.
+
+[Say something that makes this not overwhelming for folks who don't like thinking and planning ahead.]
+
+[This is a compete guide.  Can we create a dynamically generated version based on who the mentor is?]
+
+== General guidelines == 
+== Practicing Git ==
+== Career Panel ==
+== Contributions Workshop ==
+
+The contributions workshop is the last part of the day.  We've found that the best way to engage students is to provide them with clear structure and a lot of guidance.  However, students may not be interested in that structure.  We go over what else you can provide to students in the "other options for students" section below.
+
+=== Overview of Workshop ===
+
+==== For in-person mentors ==== 
+
+===== Before the event =====
+
+- set up project on their computer + give feedback to remote mentor
+- (optional) look through the tasks for the project
+
+===== At the event =====
+
+Students begin working on tasks.  Local mentor responsible for encouraging students to ask questions in IRC.
+After a brief intro (taped pitches, see above), students will go to sit next to the local mentor.
+Local mentor should make sure the intro session is recorded for late joiners.
+
+==== For remote mentors ====
+
+===== Before the event =====
+
+- do a 60 second taped pitch for the intro section
+- respond to organizer & in-person mentor feedback re: project documentation, task clarity, setup
+
+===== At the event =====
+
+Remote mentor will give a google hangout presentation giving more detail about project structure.
+
+===== After the event =====
+
+Remote mentors: reviewing pull requests
+
+=== Other options for students ===
+
+
