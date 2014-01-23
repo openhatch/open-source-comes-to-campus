@@ -10,7 +10,7 @@ Want to contribute to Open Source Comes to Campus?  You can:
 
 We strongly encourage you to [come say hello to us!](http://openhatch.readthedocs.org/en/latest/community/contact.html)
 
-====What's in this repository?====
+####What's in this repository?
 
 The repository contains four main folders:
 
@@ -20,7 +20,7 @@ The repository contains four main folders:
 * scripts
 
 In curriculum, you will find three folders.  __handouts__ contains copies of handouts to 
-print for student use.  __presentations__ contains .odp files used at events.  diff_patch_demo contains materials used in the diff_patch_demo activity.
+print for student use.  __presentations__ contains .odp files used at events.  __diffpatchdemo__ contains materials used in the diff_patch_demo activity.
 
 In logistics, you will find two folders.  __schedules__ contains copies of schedules to 
 print for student use.  __mentors__ contains a draft of guidelines/handouts to give to mentors who'll
@@ -35,7 +35,7 @@ script can be found [here](https://openhatch.org/wiki/Open_Source_Comes_to_Campu
 The repository contains a fair amount of obsolete material.  It may be difficult to find the most 
 relevant and up to date stuff - for help doing so, please contact us.
 
-====What's not in this repository?====
+####What's not in this repository?
 
 You can find more information about Open Source Comes to Campus:
 * [On the wiki.](https://openhatch.org/wiki/Open_Source_Comes_to_Campus)
