@@ -6,11 +6,24 @@ You may be wondering what, specifically, we're expecting of you and what you can
 
 ## General Guidelines
 
+potential subsections:
+- how to approach students who look disinterested
+- code of conduct
+- common questions?
+
 ## Activities
 
 ### Practicing Git
 
+Practicing Git is a hands-on activity to help students learn how to use Github/Git/version control.  Organizers will ask mentors ahead of time about their comfort with Git, and assign mentors to work with advanced students, regular students, or to float.
+
+If you are asked to lead a group for the git activity, please read [this page](https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Instructors) to familiarize yourself.  You should also send your github username to the organizer.
+
 ### Career Panel
+
+Most events have a career panel where students can ask questions about mentors' experiences in open source.  If you have, or have ever had, an open source job, you can be on the panel.
+
+There's zero preparation you need to do, but if you'd like to see how we structure the panel or some of the questions you might be asked, you can do so [here](https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel).
 
 ### Contributions Workshop
 
@@ -82,19 +95,19 @@ Although we recognize that not every attendee will be immediately transformed in
 
 There are several other options for students who don't want to work on one of the projects we've provided.  Local mentors can offer these options to students.
 
-##### Option 1: the Finding a Project activity
+###### Option 1: the Finding a Project activity
 
 For: students who don't know what project to work on
 
 [This hand out]() guides students through the process of finding and evaluating open source projects.  It can be done in pairs, with a mentor, or by oneself.
 
-##### Option 2: pair contributing with a floating mentor or other student
+###### Option 2: pair contributing with a floating mentor or other student
 
 For: students who know what project they want to work on, but still need guidance
 
-If a student has a project they want to work on, the can sit down with a floating mentor or other attendee and go through the steps of joining an open source project.  It may be more difficult for them to get a development environment set up, find tasks to work on, etc but some students will enjoy this more anyway.  
+If a student has a project they want to work on, the can sit down with a floating mentor or other attendee and go through the steps of joining an open source project.  It may be more difficult for them to get a development environment set up, find tasks to work on, etc but some students will enjoy this more anyway.
 
-##### Option 3: complete freedom
+###### Option 3: complete freedom
 
 For: the student who just wants to do their own thing
 
