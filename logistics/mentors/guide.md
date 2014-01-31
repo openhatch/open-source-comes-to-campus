@@ -77,7 +77,7 @@ The local and remote mentor are a team.  The remote mentor is more familiar with
 
 - Respond as best as you can to questions and comments from students.  If you can't answer a question, direct students to the remote mentor on IRC.
 - Help students document their progress via [bug reports]().
-- Keep an eye on students and approach them if they seem bored, frustrated, or otherwise disengaged.  If they don't want to work on the project, direct them to the activities in the "other options for students" section below.
+- Keep an eye on students and approach them if they seem bored, frustrated, or otherwise disengaged (see [Approaching Students](#approaching_students)).  If they don't want to work on the project, direct them to [other options for students](#other_options).
 
 ###### For remote mentors
 
@@ -175,7 +175,7 @@ __Failing silently.__
 
 The problem:  Students will sometimes run into issues with activities or with open source projects they're contributing to, and just quietly give up/move on to something else.
 
-The solution:  Emphasize the importance of feedback.  Open source projects have elaborate systems set up to elicit, record, and respond to feedback: issue trackers, mailing lists, etc.  Encourage students to use the Open Source Comes to Campus issue tracker (https://github.com/openhatch/open-source-comes-to-campus/issues) where appropriate, and to give feedback to project maintainers via IRC, mailing lists, and issue trackers.  If you have a story in which a bug report or more informal feedback helped you solve a problem, share it.
+The solution:  Emphasize the importance of feedback.  Open source projects have elaborate systems set up to elicit, record, and respond to feedback: issue trackers, mailing lists, etc.  Encourage students to use the [Open Source Comes to Campus issue tracker](https://github.com/openhatch/open-source-comes-to-campus/issues) where appropriate, and to give feedback to project maintainers via IRC, mailing lists, and issue trackers.  If you have a story in which a bug report or more informal feedback helped you solve a problem, share it.
 
 __Having difficulty setting up a development environment.__
 
@@ -187,7 +187,7 @@ __Having difficulty finding a project.__
 
 The problem:  Despite sincere interest in open source, students frequently will have difficulty choosing a specific project to work on.  This is common enough that we've actually redesigned our curriculum to make it less of an issue.
 
-The solution:  You can see the Contributions Workshop section for more details about guiding students through their first contributions.  More generally, though, approaches to finding good projects include asking:
+The solution:  You can see the [Contributions Workshop section](#contributions_workshop) for more details about guiding students through their first contributions.  More generally, though, approaches to finding good projects include asking:
 * Are there any open source projects you already use?
 * Do you have any friends or connections to an open source project?
 * What kind of contributions do you want to make?  (If programming, what language(s)?)
