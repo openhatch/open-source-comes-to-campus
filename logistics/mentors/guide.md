@@ -4,43 +4,43 @@ Hi!  Thank you so much for volunteering to help at our Open Source Comes to Camp
 
 You may be wondering what, specifically, we're expecting of you and what you can do to prepare.  This guide goes over everything that's involved in being an Open Source Comes to Campus mentor.
 
-* <a name="activities">Activities</a>
-    * <a name="practicing_git">Practicing Git</a>
-    * <a name="career_panel">Career Panel</a>
-    * <a name="contributions_workshop">Contributions Workshop</a>
-        * <a name="overview">Overview</a>
-        * <a name="specific_responsibilities">Specific Responsibilities</a>
-        * <a name="other_options">Other Options for Students</a>
-* <a name="approaching_students">Approaching Students</a>
-    * <a name="principles">Principles</a>
-    * <a name="practical_advice">Practical Advice</a>
-        * <a name="struggling">Signs Someone Is Struggling</a>
-        * <a name="questions">Questions to Ask Students</a>
-        * <a name="common_problems">Common Problems You Might Run Into</a>
-    * <a name="final_notes">Final Notes</a>
-* <a name="acknowledgements">Acknowledgements</a>
+* [Activities](#activities)
+    * [Practicing Git](#practicing_git)
+    * [Career Panel](#career_panel)
+    * [Contributions Workshop](#contributions_workshop)
+        * [Overview of Workshop](#overview)
+        * [Specific Responsibilities](#specific_responsibilities)
+        * [Other options for students](#other_options)
+* [Approaching Students](#approaching_students)
+    * [Principles](#principles)
+    * [Practical advice](#practical_advice)
+        * [Signs a person is struggling](#struggling)
+        * [Questions to ask students](#questions)
+        * [Common problems](#common_problems)
+    * [A few final notes](#final_notes)
+* [Acknowledgements](#acknowledgements)
 
-## [Activities](#activities)
+## <a name="activities">Activities</a>
 
-### [Practicing Git](#practicing_git)
+### <a name="practicing_git">Practicing Git</a>
 
 Practicing Git is a hands-on activity to help students learn how to use Github/Git/version control.  Organizers will ask mentors ahead of time about their comfort with Git, and assign mentors to work with advanced students, regular students, or to float.
 
 If you are asked to lead a group for the git activity, please read [this page](https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Instructors) to familiarize yourself.  You should also send your github username to the organizer.
 
-### [Career Panel](#career_panel)
+### <a name="career_panel">Career Panel</a>
 
 Most events have a career panel where students can ask questions about mentors' experiences in open source.  If you have, or have ever had, an open source job, you can be on the panel.
 
 There's zero preparation you need to do, but if you'd like to see how we structure the panel or some of the questions you might be asked, you can do so [here](https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel).
 
-### [Contributions Workshop](#contributions_workshop)
+### <a name="contributions_workshop">Contributions Workshop</a>
 
 The contributions workshop is the last part of the day.  Over time, we've come to believe that the most important thing we can do for students is to help them build an ongoing relationship with an open source project - not simply fix a bug or land a patch.  (Though it's awesome when they do!)  Accordingly, we're working to identify great projects for beginners with clear documentation, enthusiastic maintainers, and a bunch of approachable tasks.  The contributions workshop introduces students to those projects.
 
 We've found that the best way to engage students is to provide them with clear structure and a lot of guidance.  But we also understand that students might not be interested in that structure.  We talk about what to do when that happens in the "other options for students" section below.
 
-#### [Overview of Workshop](#overview)
+#### <a name="overview">Overview of Workshop</a>
 
 Before the event, we'll identify and prepare [open source projects]() for students to work on in groups.  Which projects are selected will depend in part on the interests, experiences and skills of the mentors we have at the events.  We'll ask you about those and match you up with an open source project.  (Do you maintain an open source project?  Are you interested in helping students contribute to it?  If so, the open source project you're matched with could be your own.)
 
@@ -50,7 +50,7 @@ At the beginning of projects time, there will be a brief presentation on each of
 
 Throughout projects time, mentors will help students communicate with their remote mentor, document their progress, and take steps into the community (joining IRC channels, leaving comments on issues, joining mailing lists, etc).  At the end of the workshop, there will be a wrap up where students and mentors talk about what they did.  Accomplishments like joining a mailing list or reporting a bug should be emphasized and celebrated as much as getting a patch merged.
 
-#### [Specific Responsibilities](#specific_responsibilities)
+#### <a name="specific_responsibilities">Specific Responsibilities</a>
 
 To help you get ready for the contributions workshop, we'll go into more detail about the responsibilities of mentors below.
 
@@ -100,7 +100,7 @@ Although we recognize that not every attendee will be immediately transformed in
 - Go through the [bug reports]() provided by students and local mentors and add missing information. 
 - Welcome and work with any attendees who continue to engage with your project.
 
-#### [Other options for students](#other_options)
+#### <a name="other_options">Other Options for Students</a>
 
 There are a couple other options for students who don't want to work on one of the projects we've provided.  These options include: 
 
@@ -110,13 +110,13 @@ If a student has a project they want to work on, the can sit down with a floatin
 
 Sometimes students will just want to do their own thing.  Let them do it.  :)
 
-## [Approaching Students](#approaching_students)
+## <a name="approaching_students">Approaching Students</a>
 
 Open Source Comes to Campus is very activity focused, which means that you'll frequently find yourself in the presence of a whole bunch of students attempting to join IRC for the first time, or understand a bug report, or use git, or fix a problem with a project.  These students won't always ask for help when they need it, so it's important that you feel comfortable approaching and engaging them.  This section has been written to help with that.
 
 There are a few basic principles that should guide your interactions with attendees.  We'll go over those first, and then we'll give you some practical advice.
 
-### [Principles](#principles)
+### <a name="principles">Principles</a>
 
 * __Everything is a learning experience__.  We believe that there's always something to learn, for mentors as well as students.  If you don't know the answer to an attendee's question, tell them so - and show them how to go about finding the answer.  When a student gets stuck, don't just fix their problems for them - explain what the problem is and guide them through the solution.  Open Source Comes to Campus is an ever-improving project, so when a student has a problem with the event itself or any of our activities or tools, encourage them to [make an issue](https://github.com/openhatch/open-source-comes-to-campus/issues) out of it. 
 
@@ -124,9 +124,9 @@ There are a few basic principles that should guide your interactions with attend
 
 * __Autonomy of students__.  We do our best to create a great workshop experience, but in the end it's every attendee's choice how much they want to engage.  Don't pressure a student to do an activity they're not interested in or learn in a way they don't want to learn.  (Some people learn best entirely on their own, and won't want your help no matter how badly they're stuck!)  Do try to engage students, and offer them alternatives if they don't like an activity, but if that doesn't work, respect their decision and move on to helping another attendee. 
 
-### [Practical advice](#practical_advice)
+### <a name="practical_advice">Practical Advice</a>
 
-#### [Signs a person is struggling](#struggling)
+#### <a name="struggling">Signs Someone Is Struggling</a>
 
 * Facial expressions that read as frustrated, sad, angry, confused, bored, etc.  If you have difficulty identifying facial expressions and/or body language, try [this resource]().
 
@@ -138,7 +138,7 @@ There are a few basic principles that should guide your interactions with attend
 
 * The person is contesting the activity itself: "it's not useful", "it's not what I am here for". Refusal might be in fact a sign of struggling with the purpose and path of the activity.
 
-#### [Questions to ask students](#questions)
+#### <a name="questions">Questions to Ask Students</a>
 
 _If a student looks like they are struggling_:
 
@@ -163,7 +163,7 @@ _During socializing periods (like lunch)_:
 * Do you use any open source projects?
 * Are you interested in getting more involved?  Do you have any hesitations?  (This frequently leads to discussions about topics like finding the free time, finding good projects, etc.)
 
-#### [Common problems/issues](#common_problems)
+#### <a name="common_problems">Common Problems</a>
 
 __Assuming fault for failure.__
 
@@ -198,7 +198,7 @@ The problem: If they're late, they're probably behind.
 
 The solution: Talk with them briefly about what they already know.  (They may not need to catch up on git, for instance, if they've used it before.)  If they need to catch up on one or more skills, direct them to [this website](), which contains the contents of a typical Open Source Comes to Campus event written for a student to guide themselves through.  Direct the student to that page and periodically check up with them.  If possible, get them started with IRC right away so that they can ask questions into chat.
 
-### [A few final notes](#final_notes)
+### <a name="final_notes">Final Notes</a>
 
 A few last things to be aware of...
 
@@ -208,6 +208,6 @@ Relatedly, even if a tool or concept seems fundamental to you, don't show surpri
 
 Avoid grabbing the keyboard.  If at all possible, walk someone through their problem verbally.  If you really need to type to figure something out, ask first and be careful to not be invasive about the other person's physical space if they do give permission
 
-## [Acknowledgements](#acknowledgements)
+## <a name="acknowledgements">Acknowledgements</a>
 
 Thanks to 
