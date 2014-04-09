@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Mentor Guide | Open Source Comes to Campus</title>
+
+    <script>
+	function check_visibility(button,target) 
+	{
+		if (document.getElementById(button).checked==true)
+			{
+				make_visible(target);
+			}
+		else 
+			{
+				document.getElementById(target).style.display = 'none';
+			}
+
+		
+		var cwArray = ["pl_button","pm_button","fm_button"];
+
+		if (cwArray.indexOf(button) != -1)
+			{
+
+				var toggle = 0;
+
+				for (var i=0; i<cwArray.length; ++i)
+				{
+
+					if (document.getElementById(cwArray[i]).checked==true) 
+						{
+							var toggle = 1;
+						}				
+				}
+
+				if (toggle == 1)
+					{
+						make_visible('cw');
+					}
+				else 
+					{
+						document.getElementById('cw').style.display = 'none';
+					}
+			}
+
+
+	};
+
+	function make_visible(target)
+	{
+		document.getElementById(target).style.display = 'block';
+	}
+
+    </script>
+
+	
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Open Source Comes to Campus</h1>
+        <h2>Mentor Guide</h2>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+		<div id="intro">
+          <h2> Hi</h2>
+	<p>Thank you so much for volunteering to help at our <a href="http://campus.openhatch.org/">Open Source Comes to Campus</a> event!  You may be wondering what, specifically, we're expecting of you and what you can do to prepare. This guide goes over everything that's involved in being an Open Source Comes to Campus mentor.</p>
+	<p>You may not be mentoring for the entire event.  To make it easier to read this document, select what you've been asked to do below.  If you don't know what parts of the event you'll be mentoring at, feel free to ask us for clarification, or just read everything.  :)</p>
+	<form> <!-- Insert some javascript to make this display/not display sections below. -->
+		<input type="checkbox" id="tp_button" onclick="check_visibility('tp_button','tutorialpresenter')">Tutorial Presenter<br>
+		<input type="checkbox" id="ga_button" onclick="check_visibility('ga_button','gitactivity')">Git Activity Lead<br>
+		<input type="checkbox" id="cp_button" onclick="check_visibility('cp_button','careerpanel')">Career Panelist<br>
+	</form>
+	
+	<br><p>If you'll be present for the Contributions Workshop in the afternoon, choose one of the following:</p>
+
+	<form>	
+		<input type="checkbox" id="pl_button" onclick="check_visibility('pl_button','projectlead')">Project Lead<br>
+		<input type="checkbox" id="pm_button" onclick="check_visibility('pm_button','pairedmentor')">Paired Mentor (paired with remote project lead)<br>
+		<input type="checkbox" id="fm_button" onclick="check_visibility('fm_button','floatingmentor')">Floating Mentor<br>
+	</form>
+
+	<br><p>The general guidance section immediately below will appear for everyone, but you can toggle it on and off if you want:</p>
+	<form>	
+		<input type="checkbox" id="gg_button" checked onclick="check_visibility('gg_button','general')">General Guidelines<br>
+	</form>
+	<br>
+		</div>
+
+	<div class="section" id="general">
+		<h2 id="general">General Guidance</h2>
+		<p>Open Source Comes to Campus is very activity focused, which means that you'll frequently find yourself in the presence of a whole bunch of students attempting to join IRC for the first time, or understand a bug report, or use git, or fix a problem with a project. These students won't always ask for help when they need it, so it's important that you feel comfortable approaching and engaging them. This section has been written to help with that.</p>
+		<p>There are a few basic principles that should guide your interactions with attendees. We'll go over those first, and then we'll give you some practical advice.</p>
+		<h3 id="principles">Principles</h3>
+		<p><strong>Everything is a learning experience.</strong> We believe that there's always something to learn, for mentors as well as students. If you don't know the answer to an attendee's question, tell them so - and show them how to go about finding the answer. When a student gets stuck, don't just fix their problems for them - explain what the problem is and guide them through the solution. Open Source Comes to Campus is an ever-improving project, so when a student has a problem with the event itself or any of our activities or tools, encourage them to <a href="https://github.com/openhatch/open-source-comes-to-campus/issues">make an issue</a> out of it.</p>
+		<p><strong>Approach everyone.</strong> Every attendee should have at least a few good interactions with mentors at the event. (Unless the student clearly doesn't want to interact - see "Autonomy of Students" below.) While you should prioritize helping students who are struggling, it's also important to spend time with students who are thriving. It can also be hard to tell when a student is struggling, so approaching everyone means you won't miss helping those who tend not to ask for help.</p>
+		<p><strong>Autonomy of students.</strong> We do our best to create a great workshop experience, but in the end it's every attendee's choice how much they want to engage. Don't pressure a student to do an activity they're not interested in or learn in a way they don't want to learn. (Some people learn best entirely on their own, and won't want your help no matter how badly they're stuck!) Do try to engage students, and offer them alternatives if they don't like an activity, but if that doesn't work, respect their decision and move on to helping another attendee.</p>
+		<h3 id="practical">Practical Advice</h3>
+		<p id="signsofstruggle"><strong>Signs Someone Is Struggling</strong></p>
+		<ul>
+		<li>Facial expressions that read as frustrated, sad, angry, confused, bored, etc.</li>
+		<li>Raised hand or other attempt to flag down a mentor.</li>
+		<li>Looking around the room or generally not engaged with computer or handouts.</li>
+		<li>The screen of their laptop does not display what it should, during a computer activity. Person is doing nothing with their hands, during a hands-on activity.</li>
+		<li>The person is contesting the activity itself: "it's not useful", "it's not what I am here for". Refusal might be in fact a sign of struggling with the purpose and path of the activity.</li>
+		</ul>
+		<p id="questionsforstudents"><strong>Questions to Ask Students</strong></p>
+		<p>If a student looks like they are struggling:</p>
+		<ul>
+		<li>How's it going?</li>
+		<li>Where are you at in the exercise?</li>
+		<li>Running into any snags?</li>
+		<li>Would you mind telling me what you've done so far?</li>
+		</ul>
+		
+		<p>If a student does not look like they are struggling:</p>
+		<ul>
+		<li>How's it going?</li>
+		<li>Where are you at in the exercise?</li>
+		<li>What's your plan for the next step?</li>
+		<li>How did you complete the last step?</li>
+		<li>Can you explain {concept from the activity} to me?</li>
+		</ul>
+
+		<p>During socializing periods (like lunch):</p>
+		<ul>
+		<li>How's it going? (Yes, this works for everything.)</li>
+		<li>How'd you hear about the event?  What made you want to come?</li>
+		<li>What classes are you taking?/Have you picked a major yet?</li>
+		<li>Do you use any open source projects?</li>
+		<li>Are you interested in getting more involved? Do you have any hesitations? (This frequently leads to discussions about topics like finding the free time, finding good projects, etc.)</li>
+		</ul>
+
+		<h3 id="commonproblems">Common Problems</h3>
+
+		<p><strong>Assuming fault for failure.</p></strong>
+		<p>The problem: When students have difficulty understanding an activity or contributing to a project, they often will assume it's due to their own ignorance/lack of experience/lack of ability. Because they're not as familiar with the obstacles open source presents, they can't identify what's going wrong - just that something is. They may assume it's entirely their fault and get discouraged.</p>
+		<p>The solution: Talk through the issue and reframe it as a lack of information, not a lack of ability. (Perhaps the project's guidelines aren't clear enough. Perhaps the student hasn't been taught a particular tool or concept yet.) Relate a story, if you have one, about your own difficulties doing a similar thing. Talk with the student about how they'd tackle a similar problem if they face it in the future./<p>
+
+		<p><strong>Failing silently.</p></strong>
+		<p>The problem: Students will sometimes run into issues with activities or with open source projects they're contributing to, and just quietly give up/move on to something else.</p>
+		<p>The solution: Emphasize the importance of feedback. Open source projects have elaborate systems set up to elicit, record, and respond to feedback: issue trackers, mailing lists, etc. Encourage students to use <a href="https://github.com/openhatch/open-source-comes-to-campus/issues">the Open Source Comes to Campus issue tracker</a> where appropriate, and to give feedback to project maintainers via IRC, mailing lists, and issue trackers. If you have a story in which a bug report or more informal feedback helped you solve a problem, share it.</p>
+
+		<p><strong>Having difficulty setting up a development environment.</p></strong>
+		<p>The problem: Students can't complete an activity or contribute to a project because they're having trouble setting up the development environment.</p>
+		<p>The solution: This can be a tricky one for a mentor to address if they're not familiar with a given project's requirements. If you are familiar - or you're an old hand at debugging this sort of thing - great! Just make sure to show the student what you're doing and explain the steps you're taking. If you're not, you can role model lifelong learning by asking other people at the event (or on IRC) for help. There should be at least one person available at the event or on IRC who is especially good at handling environment setup, and you'll be told ahead of time who those people are.</p>
+
+		<p><strong>Having difficulty finding a project.</p></strong>
+		<p>The problem: Despite sincere interest in open source, students frequently will have difficulty choosing a specific project to work on. This is common enough that we've actually redesigned our curriculum to make it less of an issue.</p>
+		<p>The solution: You can see the Contributions Workshop section for more details about guiding students through their first contributions. More generally, though, approaches to finding good projects include asking:</p>
+			<ul>
+			<li>Are there any open source projects you already use?</li>
+			<li>Do you have any friends or connections to an open source project?</li>
+			<li>What kind of contributions do you want to make? (If programming, what language(s)?)</li>
+			</ul>
+		<p><strong>Coming into the event late.</p></strong>
+		<p>The problem: If they're late, they're probably behind.</p>
+		<p>The solution: Talk with them briefly about what they already know. (They may not need to catch up on git, for instance, if they've used it before.) If they need to catch up on one or more skills, direct them to <a href="https://openhatch.org/wiki/What_You_Missed">this page</a>, which contains the contents of a typical Open Source Comes to Campus event written for a student to guide themselves through. Direct the student to that page and periodically check up with them. If possible, get them started with IRC right away so that they can ask questions into chat.</p>
+
+		<h3 id="pleaseavoid">Please avoid...</h3>
+		<p><strong>Assuming attendees know what you know.</strong>  Don't assume that an attendee knows something, no matter how commonplace or obvious it seems to you. For example, I used to open up documents in nano (my command line editor of choice) without explaining what I was doing. This confused a significant number of people - frequently people who were familiar with the command line and/or text editors, but had never heard of nano. Finally one of them asked me what was going on. Now I explain the first time I use a command line text editor to open a file.</p>
+		<p><strong>Behaving surprised when a student doesn't know something.</strong>  Relatedly, even if a tool or concept seems fundamental to you, don't show surprise or make a big deal out of it when a student hasn't heard of it. Our attendees come from all backgrounds, including non-CS ones. And regardless of background, everyone has a first time they hear about something. Make that experience affirming and enjoyable, not embarrassing.</p>
+		<p><strong>Grabbing the keyboard.</strong> If at all possible, walk someone through their problem verbally. If you really need to type to figure something out, ask first and be careful to not be invasive about the other person's physical space if they do give permission.</p>
+	</div>
+	
+	<div id="tutorialpresenter" class="defaultoff">
+		<h2>Tutorial Presenter</h2>
+		<p>If you're presenting a tutorial, make sure to talk to both the local organizers and Shauna, the main OpenHatch organizer, to go over what you'll be presenting.  Our wiki documents <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum">our entire curriculum</a> and most tutorials have a complete walkthrough.  <a href="https://openhatch.org/wiki/OSCTC/Tools">Some sections</a> also have screencasts or video of someone leading the tutorial, plus a transcript.  Slides and materials for various activities can be found in <a href="https://github.com/openhatch/open-source-comes-to-campus/tree/master/curriculum">the github repository</a>.</p>
+		<p>You are welcome to adapt and personalize the materials you'll be presenting.</p>
+		<p>If you'd like to practice presenting or be trained to lead an activity, just ask!</p>
+	</div>
+	
+	<div id="gitactivity" class="defaultoff">
+		<h2>Git Activity Lead</h2>
+		<p>A central part of our tutorial is teaching students to use git, specifically via Github.  To do this, we've created an activity where students make changes to a toy project.  You'll be leading a small group (typically between 3-6) students through the steps <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">listed here</a>.<p>
+		<p>Please take a look at the topics covered by the lesson and make sure you feel comfortable with them.  If you're not comfortable with them, let the organizers know.  We can help you get comfortable, or have someone else take your place, depending on what you prefer.  If you would like to lead the activity, please give the organizers your Github username so we can give you admin privileges for your toy project repository.</p>
+		<p>There are typically a handful of students at any given event who are already familiar with git.  If you feel <strong>very</strong> comfortable teaching git, you can lead these students through more advanced material.  Please let us know if you'd like to be an advanced git mentor.</p>
+
+		<p>When leading the Git Activity, we recommend:</p>
+		<ul>
+			<li>Explaining the concepts behind git commands, not just using them.  Common questions include "What's the difference between fork and clone?" and "Why do you have to do git add?"</li>
+			<li>Visually as well as verbally demonstrating.  Show students your computer screen as you lead them through the activity.</li>
+			<li>Checking that all of your students have completed each step before you move on.</li>
+		</ul>
+
+	</div>
+
+	<div id="careerpanel" class="defaultoff">
+		<h2>Career Panelist</h2>
+		<p>Most events have a career panel where students can ask questions about mentors' experiences in open source. If you have, or have ever had, an open source job, you can be on the panel.  There's zero preparation you need to do, but if you'd like to see how we structure the panel or some of the questions you might be asked, you can do so <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel">here</a>.
+
+	</div>
+
+	<div id="cw" class="defaultoff">
+
+		<h2>The Contributions Workshop</h2>
+		<p>The contributions workshop is the last part of the day. Over time, we've come to believe that the most important thing we can do for students is to help them build an ongoing relationship with an open source project - not simply fix a bug or land a patch. (Though it's awesome when they do!) Accordingly, we're working to identify great projects for beginners with clear documentation, enthusiastic maintainers, and a bunch of approachable tasks. The contributions workshop introduces students to those projects.</p>
+
+		<p><strong>Overview of Workshop</strong></p>
+
+		<p>Before the event, we'll identify and prepare <a href="http://campus.openhatch.org/projects.html">open source projects</a> for students to work on.  (More on that below.)  At the beginning of projects times, one of the organizers will go over the structure of this part of the day.  Briefly, that structure is:
+		<ul>
+			<li>Project Introductions:  Project leads, both local and remote, will spend 2-5 minutes giving a brief overview of their projects and what tasks are available to work on.  Remote mentors will talk via video chat.  Paired mentors paired with a remote mentor will introduce themselves as the in-person mentor helping with that project.</li>
+			<br>
+			<li>Contributing:  The bulk of the workshop will consist of students working with mentors to contribute to a project.  Depending on the schedule, this part of the day can be as short as an hour or as long as four hours.  Most students will be working on a specific project from the Project Introductions, but there are other options for them.  This is mostly something for floating mentors to pay attention to.</li>
+			<br>
+			<li>Check In:  Depending on the schedule of the event, organizers will conduct one or more check-ins where mentors and students talk about what they're working on, and if they're stuck.</li>
+			<br>
+			<li>Wrap Up:  This is a lot like a check in, but at the very end of the day.  It marks the end of the contributions workshop, although it may be possible for students and mentors to keep working (ask the organizers).</li>
+		</ul>
+	</div>
+	
+	<div id="projectlead" class="defaultoff">
+
+		<h2>Project Lead</h2>
+
+		<p>Project leads are mentors who have an open source project they maintain or contribute to that they are interested in working on with students.  If you're interested in being a project lead, please contact the organizers.  Project leads can be in person or remote.  Remote project leads will be paired with a paired mentor who can be their "eyes and ears" at the event.</p>
+	
+		<p>Ideally all projects will fit the criteria of an <a href="http://campus.openhatch.org/projects.html">OpenHatch-affiliated Project</a>.  That is, they will have good documentation, a tested installation and contribution guide, and bitesized tasks defined ahead of the event.  All remotely-led projects will have this.  For in-person mentors, there is more flexibility.  Talk to the OpenHatch organizers about what you need to do to include your project.  A common option is to work with students to improve your documentation and installation process.</p>
+
+		<p>We like to introduce students to projects before the event, so that those who are interested can get a head start on installing the project and learning about it.  Your organizers will ask if you're willing to field questions and requests for help in the two weeks leading up to the event.  If you are, we'll include info on your project and how to contact you in an email to students who have signed up.</p>
+
+		<p>Your responsibilities:</p>
+		<ul>
+			<li>Before the event (if remote): Help your paired mentor test out your project</li>
+			<li>Before the event (optional): Help students get familiar with your project (cc your paired mentor on conversations)</li>
+			<li>At the start of the workshop, give a 2-5 minute presenation on the project</li>  
+			<li>Be available for the duration of the workshop, whether via IRC or in person</li>
+			<li>After the event, give feedback on and/or merge any pull requests/patches</li>
+		</ul>
+
+	</div>
+
+	<div id="pairedmentor" class="defaultoff">
+
+		<h2>Paired Mentor</h2>
+		<p>A paired mentor is someone who is working with a remote project lead to help students contribute to a project.  The paired mentor is the remote mentor's "eyes and ears" on the ground.  They're able to see students as they work, and will be better able to notice signs of frustration, disengagement, or confusion. The two mentors should be comfortable enough with each other that the local mentor can easily say, "Why don't you ask [remote mentor] about that in IRC?" or "Why don't you ask [paired mentor] to show you that on your computer?"</p>
+
+		<p>Your responsibilities:</p>
+		<ul>
+			<li>Before the event: Read through the project's materials and install it on your computer</li>
+			<li>Before the event (optional): Your project lead may be helping students prepare before the event.  If so, they'll cc you.  If you want, you can read and respond to conversations between project lead and students</li>
+			<li>At the start of the workshop, introduce yourself when the project lead presents their project</li>  
+			<li>During the workshop, help students contribute to the project.  Keep an eye out for signs of frustration.  Keep in contact with your project lead on IRC.  Make sure that you're keeping track of IRC handles so that project leads can follow up with students via email/github.</li>
+		</ul>
+
+	</div>
+
+	<div id="floatingmentor" class="defaultoff">
+
+		<h2>Floating Mentor</h2>
+
+		<p>Floating mentors are not assigned to a specific project.  As a floating mentor, you can help others lead a project if there are a lot of students or work with late arrivals and/or students who are struggling with the tutorial materials.  If there are students who don't want to work on any of the presented projects, you can help them find a project by going through the <a href="https://github.com/openhatch/open-source-comes-to-campus/blob/master/curriculum/handouts/FindingProjects_Student_Handout.odt">Finding a Project activity</a>.  Or, if they have a project they want to work on, you can help them get started.  Or maybe you'll find yourself in a deep, hour-long conversation with a student about open source.  That's cool too.</p>
+		</section>
+
+		<aside>
+			<h3>Contents</h3>
+			<br>
+			<p><a href="#general" onclick="make_visible('general')">General Guidelines</a></p>
+			<p><a href="#tutorialpresenter" onclick="make_visible('tutorialpresenter')">Presenting Tutorials</a></p>
+			<p><a href="#gitactivity" onclick="make_visible('gitactivity')">Leading the Git Activity</a></p>
+			<p><a href="#careerpanel" onclick="make_visible('careerpanel')">Career Panel</a></p>
+			<p><a href="#cw" onclick="make_visible('cw')">Contributions Workshop Overview</a></p>
+			<p><a href="#projectlead" onclick="make_visible('projectlead')">Project Leads</a></p>
+			<p><a href="#pairedmentor" onclick="make_visible('pairedmentor')">Paired Mentors</a></p>
+			<p><a href="#floatingmentor" onclick="make_visible('floatingmentor')">Floating Mentors</a></p>
+			<h3>Thanks</h3>
+			<br>
+			<p>The following people have contributed to this guide: Shauna Gordon-McKeon, Sheila Miguez</p>
+			<h3>Feedback</h3>
+			<p>Have feedback on this guide, or Open Source Comes to Campus generally? File an issue in <a href="https://github.com/openhatch/open-source-comes-to-campus/issues">the issue tracker</a> or <a href="http://openhatch.readthedocs.org/en/latest/community/contact.html">contact us</a>.</p>
+			<h3>Share</h3>
+			<p>This guide is licensed <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0.</a></p>
+		</aside>
+
+	</div>
+
+	</div>
+
+      </div>
+    </div>
+
+  
+  </body>
+</html>
