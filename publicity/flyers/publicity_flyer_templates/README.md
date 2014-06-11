@@ -6,8 +6,8 @@ Notes: .xcf is a free file format.  .xcf files cannot be opened in Photoshop.  T
 <table border=1px cellpadding=5px>
 <tr><td>School</td><td>Creator</td><td>Editable</td><td>Easily Viewable</td></tr>
 <tr><td>MIT</td><td>Benjamin Reynolds</td><td>N/A (sorry!)</td><td><a href="./MIT_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
-<tr><td>Northeastern Illinois University</td><td>Jeremy Grajales</td><td>N/A (sorry!)</td><td><a href="./NEIU_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
-<tr><td>Princeton University</td><td>Katherine Ye</td><td>file too large to share here (but we have it!)</td><td><a href="./Princeton_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
+<tr><td>Northeastern Illinois University</td><td>Jeremy Grajales</td><td><a href="./NEIU_publicityflyer.svg">Publicity Flyer as vectorized approximation (.svg)</a></td><td><a href="./NEIU_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
+<tr><td>Princeton University</td><td>Katherine Ye</td><td><a href="./Princeton_publicityflyer.xcf">Publicity Flyer (.xcf)</a></td><td><a href="./Princeton_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
 <tr><td>Rutgers University</td><td>Prachi Pendse</td><td><a href="./Rutgers_publicityflyer.pub">Publicity Flyer (.pub)</a></td><td><a href="./Rutgers_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
 <tr><td>Purdue University</td><td>Lauren Stuart</td><td>N/A (sorry!)</td><td><a href="./Purdue_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
 <tr><td>IU-Bloomington</td><td>Sarah Craig</td><td><a href="./IUB_publicityflyer.ai">Publicity Flyer (.ai)</a><br /><a href="./IUB_publicityflyer.ait">Publicity Flyer (.ait)</a></td><td><a href="./IUB_publicityflyer.jpg">Publicity Flyer (.jpg)</a></td></tr>
