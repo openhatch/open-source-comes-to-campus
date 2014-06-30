@@ -1,5 +1,5 @@
 *.~lock*
-
+*~
 *.pyc
 
 scripts/settings.txt
