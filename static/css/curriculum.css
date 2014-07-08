@@ -1,0 +1,146 @@
+/*
+* MIXITUP Boilerplate Template Stylesheet
+*/
+
+/* ------ DEFAULTS ------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+
+table{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+nav li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+/* ------ BOILERPLATE TEMPLATE ------ */
+
+body{
+	font-family: 'Open Sans';
+}
+
+.wrapper{
+	margin: 0 auto 0 auto;
+	max-width: 1080px;
+}
+
+.controls{
+	display: inline-block;
+	width: 300px;
+	margin: 0 0 30px;
+	vertical-align: top;
+	text-align:left;
+}
+
+.controls li{
+	margin-left: 20px;
+	cursor: pointer;
+	list-style-type: disc;
+}
+
+.controls li.active{
+	font-weight: 700;
+}
+
+#Grid{
+	width: 1055px;
+	text-align: left;
+	font-size: 0.1px;
+}
+
+#Grid:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+
+#Grid .mix{
+	display: none;
+	opacity: 0;
+	width: 325px;
+	height: 300px;
+	vertical-align: top;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #ceed7e;
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+
+#Grid .gap{
+	display: inline-block;
+	width: 350px;
+}
+
+#footer {
+    height:100px;
+    clear:both;
+    width:800px;
+}
+
+.header-wrap {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.mix h2 {
+    margin: 10px 10px 10px 10px;
+    font-size:24px;
+}
+
+.mix h4 {
+	margin: 10px 10px 10px 10px;
+    font-size:18px;
+    text-align: left;
+    font-weight:none;
+}
+
+.mix p {
+    margin: 10px 10px 10px 10px;
+	width: 305px;
+	text-align: left;
+	line-height: 1.5;
+	font-size:14px;
+}
+
+.intro p {
+    padding:5px;
+}
+
+.control-wrap {
+    text-align:center;   
+}

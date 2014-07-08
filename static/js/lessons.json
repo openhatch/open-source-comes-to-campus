@@ -1,0 +1,41 @@
+[
+    {"ID": "laptop-setup",
+    "name" : "Laptop Setup",
+    "time" : "20",
+    "dependencies" : "none",
+    "category" : "introduction and set up",
+    "tags" : ["needs internet"],
+    "notes": "laptop setup notes",
+    "links" : {"main" : "https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Laptop_setup", "short" : "http://bit.ly/laptop-setup"}
+    },
+    
+    {"ID": "what-is-open-source",
+    "name" : "What is Open Source?",
+    "time" : "30",
+    "dependencies" : "none",
+    "category" : "introduction and set up",
+    "tags" : [],
+    "notes": "open source notes",
+    "links" : {}
+    },
+    
+    {"ID": "icebreakers",
+    "name" : "Icebreakers",
+    "time" : "15",
+    "dependencies" : "none",
+    "category" : "introduction and set up",
+    "tags" : [],
+    "notes": "open source notes",
+    "links" : {}
+    },
+    
+    {"ID": "icebreakers",
+    "name" : "Icebreakers",
+    "time" : "15",
+    "dependencies" : "none",
+    "category" : "introduction and set up",
+    "tags" : [],
+    "notes": "open source notes",
+    "links" : {}
+    },
+]

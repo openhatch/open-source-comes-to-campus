@@ -1,0 +1,185 @@
+body {
+  color: #222;
+}
+
+h1, h2 {
+  color: black;
+}
+
+h1 {
+  font-weight: 900;
+  text-align:center;
+}
+
+.row {
+  padding-bottom: 2em;
+}
+
+.headerpane {
+  color: white;
+}
+
+.headerpane h1 {
+  color: white;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.bluestripe {
+  background: #333;
+  padding: 20px 0 30px 0;
+}
+
+.bottomstripe {
+  padding-bottom: 0;
+}
+
+.bluestripe, .bluestripe h2 {
+  color: white;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.learnmore .glyphicon {
+  display: block;
+  float: left;
+  margin-right: 12px;
+  margin-top: -.25em;
+  margin-bottom: 0;
+}
+
+
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+
+.wide-container {
+    max-width: 1370px;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.masthead {
+  background-color:#3498DB;
+}
+
+.masthead a:link, 
+.masthead a:visited, 
+.masthead a:hover, 
+.masthead a:active {
+  color:white;
+  font-weight:bold;
+}
+
+.masthead-alt {
+  background-color:#3498DB;
+  margin-bottom: 0;
+  text-align:center;
+}
+
+.pastevents {
+  background-color:#3498DB;
+  color:white;
+}
+
+.pastevents .endofpe{
+  padding-top: 35px;
+  font-size: 20px;
+}
+
+.pastevents h1 {
+  font-size:40px;
+  font-weight:bold;
+  color:white;
+  text-align:center;
+}
+
+.pastevents a:link, 
+.pastevents a:visited, 
+.pastevents a:hover, 
+.pastevents a:active {
+  color:white;
+  font-weight:bold;
+}
+
+
+.date {
+  font-size:16px;
+  font-style:italic;
+}
+
+.media-heading {
+  margin-bottom:10px;
+}
+
+.project {
+  border:4px solid;
+  border-radius:25px;
+  padding:10px;
+  text-align:center;
+  margin:10px;
+}
+
+.pb {
+  text-align:left;
+  padding-bottom:10px;
+}
+
+@media (max-width: 500px) {
+  .col-xxs-12, .col-xxs-12 .img-responsive {
+    width: 100%;
+  }
+}
+
+.tiers ul {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.scale h1 {
+  align:center;
+}
+
+.scale a:link, 
+.scale a:visited, 
+.scale a:hover, 
+.scale a:active {
+  text-decoration:none;
+  font-weight:normal;
+}
+
+.projectlogo {
+  height:70px;
+}
+
+/* Lessons Page CSS */
+
+.lessons-header {
+    background-color: #3498DB;
+    color: white;
+    font-size:40px;
+    text-align:center;
+    padding:20px;
+}
+
+.padding-above {
+    padding-top:30px;
+}
+
+.green {
+    background-color: #ceed7e;
+    margin:20px;
+    padding:20px;
+}
+
+.container {
+    max-width:1400px;
+}
