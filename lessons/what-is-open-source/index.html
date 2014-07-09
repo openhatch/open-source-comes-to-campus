@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>What is Open Source?</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/reveal.min.css">
+		
+        <link rel="stylesheet" href="../css/theme/lessons.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+		
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+			    	<section class="title-page">
+					    <h2>What is Open Source?</h2>	
+				    </section>
+				    
+				    <section data-background="../images/logos.png" style="background: rgba(255,255,255,0.99)">
+					    <p class="float-up">What projects do these logos represent? <br/> What do the projects do?</p>	
+				    </section>
+				    
+				    <section data-background="../images/logos.png">
+				    	<aside class="notes">
+					        Left to right:
+					        <ul>Row 1:
+					        <li>SciPy: </i>
+					        <li>Code.NASA: </li>
+					        <li>Sugar Labs: makes Sugar, an educational desktop environment for children, with OLPC</li>
+					        </ul>
+					        
+					        <ul>Row 2:
+					        <li>Firefox: </i>
+					        <li>Wordpress: </i>
+					        <li>Ubuntu: most popular linux operating system</li>
+					        <li>Tor: </li>
+					        </ul>
+					        					        
+					        <ul>Row 3:
+					        <li>Blender: 3D computer graphics software for simulation, modeling, animating</i>
+					        <li>OpenMRS: medical records system for underserved communities</li>
+					        <li>Python: programming language</li>
+					        </ul>
+					        
+					        <ul>Row 4:
+					        <li>Raspberry Pi: open source/open hardware credit card sized computer</i>
+					        <li>DreamWidth: </li>
+					        <li>OpenROV: low cost remote operated mini submarine</li>
+					        <li>Banshee: </li>
+					        </ul>
+ 
+					    </aside>
+				    </section>
+				    
+				    <section>
+				        <h3>What do all of these projects have in common?</h3>
+				        <ul>
+				            <li class="fragment">You can run them for any purpose</li>
+				            <li class="fragment">You can understand and change them</li>
+				            <li class="fragment">You can share copies of them</li>
+				            <li class="fragment">You can share your changed changed copies of them</li>
+				        </ul>
+				        <p class="filler"></p>
+				        <p class="fragment float-left">These are called the "four freedoms".</p>
+				    </section>
+				    
+				    <section>
+				        <h3>What are some kinds of contributions can you make?</h3>
+				        
+				        <table class="fragment center-col-wide">
+						<tbody>
+							<tr>
+								<td>
+								    Documentation<br />
+				                    User interface design<br />
+				                    Code review<br />
+				                    Logos and branding<br />
+				                    Translation<br />
+				                    Reproducing bugs<br />
+				                    Quality assurance<br />
+				                    Sysadmining<br />
+								</td>
+								<td>
+								    Website management<br />
+								    Legal advice<br />
+								    User support<br />
+								    Publicity<br />
+								    Testing<br />
+				                    Community management<br />
+				                    Creating tutorials<br />
+				                    ... and, yes, coding.
+                                </td>
+							</tr>
+						</tbody>
+					</table>
+
+				    </section>
+				    
+				    <section>
+				        <h3>Why contribute?</h3>
+				        <p>{insert #whyopensource responses here}</p>
+				        <aside class="notes">
+				        </aside>
+				        
+				    </section>
+			</div>
+
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+    </body>
+
+</html>
