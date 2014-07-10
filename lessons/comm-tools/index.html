@@ -71,18 +71,20 @@
 				    <section data-background="../images/irc_backgrounds.jpg">
 				        
 				        <aside class="notes">
-				            Top-left is Colloquy (recommended for Mac).  Top-right is X-chat (recommended for Windows).  Bottom-left is Hexchat (recommended for Linux).  Bottom-right is the webchat interface.
+				            Top-left is Colloquy (recommended for Mac in our setup).  Top-right is X-chat (recommended for Windows).  Bottom-left is Hexchat (recommended for Linux).  Bottom-right is the webchat interface.
 				            
 				            {{It's worth reminding students that their clients might not look exactly like this, as there are different themes, versions, etc.}}
 				            
-				             {{The next few slides go over how to use IRC.  I highly recommend temporarily switching so you're not actually showing these slides, but instead showing an IRC client.  However, there are speaker notes for these steps that you can use.  Don't worry - take a minute to re-arrange yourself.  Students usually need a moment to start their IRC client anyway.}}
+				             {{ If you press down on the next slide, you can view the "intro to IRC" steps from the self-guided version.  I recommend that you actually leave the presentation and demo everything using your IRC client.  Don't worry - take a minute to re-arrange yourself.  Students usually need a moment to start their IRC client anyway.}}
 				             
 				        </aside>
 				        
 				    </section>
+				    
+			<section>
 				        
 				    <section>
-				        <p>IRC is decentralized, which means no one organization or company controls it.  Instead, individuals host networks.  Make sure your channel AND network are correct!</p>
+				        <p class="float-left">IRC is decentralized, which means no one organization or company controls it.  Instead, individuals host networks.  Make sure your channel AND network are correct!</p>
 				        <img src="../images/right_network.png"><img src="../images/wrong_network.png">
 
 				        <aside class="notes">
@@ -92,41 +94,132 @@
 				    </section>
 				    
 				    <section>
-				    	<p>You can join a channel from the command line!</p>
-					<pre><code data-trim contenteditable>
-                        /join #openhatch
-					</code></pre>
-					
-					 <aside class="notes">
+				    	<p class="float-left">You can join a channel from the command line!</p>
+				    	<p class="filler"></p>
+					    <pre><code data-trim contenteditable>
+                            /join #openhatch
+					    </code></pre>
+					    <aside class="notes">
 				            You can make your own new channels this way, by joining a channel that doesn't already exist.
-				      </aside>
-				        
+				        </aside>
 				    </section>
 				    
 				    <section>
-				    	<p>If you use someone's nickname, most clients highlight that so it's easy for them to see.  It's considered good form to include the nicks of people you are addressing, although you don't need to do this for every single line.</p>
+				    	<p class="float-left">If you use someone's nickname, most clients highlight that so it's easy for them to see.  It's considered good form to include the nicks of people you are addressing, although you don't need to do this for every single line.</p>
+					    <p class="filler"></p>
 					    <img src="../images/irc_highlight.png">
 				    </section>
 				    
 				    <section>
-				    	<p>You can do actions.</p>
+				    	<p class="float-left">You can start a private conversation with someone using this command: </p>
+				    	<p class="filler"></p>
+						<pre><code data-trim contenteditable>
+                            /query nick messsage
+					    </code></pre>
+					    <p class="filler"></p>
+					    <p class="float-left">It is considered good form to ask in the public channel whether you can send a private message to someone.</p>
+				    </section>
+				    
+				    <section>
+				    	<p class="float-left">You can do actions.</p>
+				    	<p class="filler"></p>
 					    <img src="../images/irc_actions.png">
 					    <img src="../images/irc_actions_2.png">
 				    </section>
 				    
 				    <section>
-				    	<p>You can register your nickname!</p>
+				    	<p class="float-left">You can register your nickname!</p>
+				    	<p class="filler"></p>
 					    <pre><code data-trim contenteditable>
                             /msg NickServ REGISTER password youremail@example.com
 					    </code></pre>
-					    <p>Then, when you return to the network after being away, you can identify yourself with your registered name and password:</p>
+					    <p class="filler"></p>
+					    <p class="float-left">Then, when you return to the network after being away, you can identify yourself with your registered name and password:</p>
+					    <p class="filler"></p>
 			            <pre><code data-trim contenteditable>
                             /msg NickServ IDENTIFY account password
 					    </code></pre>		
 				    </section>
 				    
 				    <section>
+				        <p class="float-left">If you want to be persistently logged in to IRC, you can:</p>
+				        <p class="filler"></p>
+				            <p><a href="http://wiki.znc.in/ZNC">set up a "bouncer"</a></p>
+				            <p><a href="https://www.irccloud.com/">use a paid service</a></p>
+				            <p><a href="http://quassel-irc.org/">use the Quassel server component</a></p>
+				            <p>(we can help you!)</p>
+				            <p class="filler"></p>
+				        <p class="float-left">If you want to log into IRC quickly and don't have a client set up, try webchat:</p>
+				            <p><a href="http://webchat.freenode.net/">Freenode Webchat</a></p>
+				    </section>
+				    
+				    <section>
+				        <p>Want to learn more?  Try <a href="http://www.irchelp.org/irchelp/new2irc.html">#irchelp</a>!</p>
+				    </section>
+			
+			</section>
+				    
+				    <section>
 				        <h2>Issue Trackers</h2>
+				        <aside class="notes">
+				            Issue trackers are kind of like a "to do" list.
+				        
+				            {{ The next slide contains, if you press down, a few different project issue trackers in iframes.  Explore the different trackers with the group.  Ask them what similarities they see between the trackers.  Remind them to click on individual issues.}}
+				        </aside>
+				    </section>
+				    
+				    <section>
+				    	<section>
+				            <iframe src="https://code.google.com/p/oppia/issues/list"></iframe>
+				        </section>
+				        <section>
+				            <iframe src="https://issues.jenkins-ci.org/secure/IssueNavigator.jspa?"></iframe>
+				        </section>
+				        <section>
+				            <iframe src="https://github.com/scipy/scipy/issues"></iframe>
+				        </section>
+				        <section>
+				            <iframe src="https://bugzilla.gnome.org/buglist.cgi?product=gnome-dictionary&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED"></iframe>
+				        </section>
+				    
+				    </section>
+				    
+				    <section>
+				        <h2>Common fields:</h2>
+				        <ul class="fragment">
+				            <li>Unique ID</li>
+				            <li>Reporter/Creator of Issue</li>
+				            <li>Assigned</li>
+				            <li>Date Created & Date Updated</li>
+				            <li>Status</li>
+				            <li>Summary</li>
+				        </ul>
+				    </section>
+				    
+				    <section>
+    				    <h2>Pay attention to:</h2>
+				        <ul>
+				        	<li class="fragment">Status
+				        	    <ul>
+				        	        <li>Bad: "Closed", "Resolved" or "Upstream"</li>
+				        	        <li>Mediocre: "New"</li>
+				        	        <li>Good: "Open" or "Accepted" </li>
+				        	    </ul>
+				        	</li>
+				            <li class="fragment">Assigned</li>
+				            <li class="fragment">Date Updated</li>
+				        </ul>
+				        
+				        <aside class="notes">
+				            Status:  Projects will use a variety {{insert from walkthrough.}}
+				            
+				            Assigned:  If it's assigned to someone else, especially if they haven't updated recently, leave a comment saying you'd like to work on it.
+				            
+				            Date Updated:  If the issue hasn't been updated in a while (more than 6-12 months) you can leave a comment asking if the issue still needs to be addressed.
+				        </aside>
+				    </section>
+				    
+				    <section>
 				    
 				    </section>
 				    
