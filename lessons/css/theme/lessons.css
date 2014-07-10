@@ -153,3 +153,9 @@ body {
 .reveal .logos td {
     width:275px;
 }
+
+.reveal iframe {
+    width:900px;
+    height:700px;
+    background-color:white;
+}

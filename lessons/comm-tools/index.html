@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Open Source Communications Tools</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/reveal.min.css">
+		
+        <link rel="stylesheet" href="../css/theme/lessons.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+		
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+			    	<section class="title-page">
+					    <h2>Open Source Communications Tools</h2>	
+				    </section>
+				    
+				    <section>
+				        <h2>3 Most Common Tools</h2>
+				        <p>Mailing Lists</p>
+				        <p>IRC</p>
+				        <p>Issue Trackers</p>
+				    </section>
+				    
+				    <section>
+				        <h2>Mailing Lists</h2>
+				        <aside class="notes">
+				            Subscribing to mailing lists is a good way to learn about a project's culture and the type of problems they're working on.  Some projects have a lot of mailing lists...
+				        </aside>
+				        
+				    </section>
+				    
+				    <section>
+				        <iframe src="https://lists.ubuntu.com/"></iframe>
+				        
+				         <aside class="notes">
+				            {{I like to scroll down to the bottom and point out that the "discontinued lists" has over 10 lists.}}
+				        </aside>
+				    </section>
+				    
+				        <section>
+				        <img src="../images/mailing_lists.jpg">
+				        
+				         <aside class="notes">
+				           While some projects have none.  One common division is to have one lists for users and another for developers.  
+				        </aside>
+				    </section>
+				    
+				    <section>
+				        <h2>IRC</h2>
+				    </section>
+				    
+				    <section data-background="../images/irc_backgrounds.jpg">
+				        
+				        <aside class="notes">
+				            Top-left is Colloquy (recommended for Mac).  Top-right is X-chat (recommended for Windows).  Bottom-left is Hexchat (recommended for Linux).  Bottom-right is the webchat interface.
+				            
+				            {{It's worth reminding students that their clients might not look exactly like this, as there are different themes, versions, etc.}}
+				            
+				             {{The next few slides go over how to use IRC.  I highly recommend temporarily switching so you're not actually showing these slides, but instead showing an IRC client.  However, there are speaker notes for these steps that you can use.  Don't worry - take a minute to re-arrange yourself.  Students usually need a moment to start their IRC client anyway.}}
+				             
+				        </aside>
+				        
+				    </section>
+				        
+				    <section>
+				        <p>IRC is decentralized, which means no one organization or company controls it.  Instead, individuals host networks.  Make sure your channel AND network are correct!</p>
+				        <img src="../images/right_network.png"><img src="../images/wrong_network.png">
+
+				        <aside class="notes">
+				            {{ Demo this by joining #openhatch on both Freenode and another network (for instance, Mozilla, or OFTC.)}}
+				        </aside>
+				        
+				    </section>
+				    
+				    <section>
+				    	<p>You can join a channel from the command line!</p>
+					<pre><code data-trim contenteditable>
+                        /join #openhatch
+					</code></pre>
+					
+					 <aside class="notes">
+				            You can make your own new channels this way, by joining a channel that doesn't already exist.
+				      </aside>
+				        
+				    </section>
+				    
+				    <section>
+				    	<p>If you use someone's nickname, most clients highlight that so it's easy for them to see.  It's considered good form to include the nicks of people you are addressing, although you don't need to do this for every single line.</p>
+					    <img src="../images/irc_highlight.png">
+				    </section>
+				    
+				    <section>
+				    	<p>You can do actions.</p>
+					    <img src="../images/irc_actions.png">
+					    <img src="../images/irc_actions_2.png">
+				    </section>
+				    
+				    <section>
+				    	<p>You can register your nickname!</p>
+					    <pre><code data-trim contenteditable>
+                            /msg NickServ REGISTER password youremail@example.com
+					    </code></pre>
+					    <p>Then, when you return to the network after being away, you can identify yourself with your registered name and password:</p>
+			            <pre><code data-trim contenteditable>
+                            /msg NickServ IDENTIFY account password
+					    </code></pre>		
+				    </section>
+				    
+				    <section>
+				        <h2>Issue Trackers</h2>
+				    
+				    </section>
+				    
+				    
+			</div>
+
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+    </body>
+
+</html>
