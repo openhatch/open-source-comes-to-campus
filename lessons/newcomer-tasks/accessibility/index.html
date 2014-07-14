@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Accessibility</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../../css/reveal.min.css">
+		
+        <link rel="stylesheet" href="../../css/theme/lessons.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../../lib/css/zenburn.css">
+		
+		<!--[if lt IE 9]>
+		<script src="../../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+			    	<section class="title-page">
+					    <h2>Improving Project Accessibility</h2>	
+				    </section>
+				    
+				    <section>
+					    <h2>Why?</h2>
+					    <p class="float-left">Some people have disabilities which influence how they use and interact with computers.  Unfortunately, many open source projects do not take this into account.  Fortunately, tools exist which can help them take the first steps towards accessibility.</p>
+				    </section>
+				    
+				    <section>
+				        <p class="float-left">In this task, we'll be using the <a href="http://wave.webaim.org/">Web Accessibility Evaluation Tool</a> to identify changes that projects can make to improve accessibility.  You will report issues to the project.  You can also fix them, if you're comfortable doing so.  Many accessibility changes are bite-sized and good first tasks for you to take on.</p>
+				        <p class="filler"></p>
+				        <p class="float-left">Ready?  Let's get started.</p>
+				    </section>
+				    
+				    <section>
+				        <h2>The Steps</h2> <!-- EDIT -->
+				        <ul>
+				            <li>Step 1: Get Out Your Notes</li>
+				            <li>Step 2: Test Projects</li>
+				            <li>Step 3: Make a List of Changes to Make</li>
+				            <li>Step 4: Submit Issue</li>
+				            <li>Step 5: Fixing the Issues</li>
+				            <li>Step 6: Submit Your Changes</li>
+				        </ul>
+				    </section>
+				    
+				    <section>
+					    <h2>Step 1: Get Out Your Notes</h2>
+                        <p class="float-left">Open up a document in your favorite text editor.  Starting now, you're going to write down everything.  You may not end up using all your notes but it's better to write too much than forget something important.</p>
+                    </section>
+                    
+                    <section>
+					    <h2>Step 2: Test Projects</h2>
+					    
+					    <img src="../../images/wave_screenshot.png" class="float-left">
+					    
+					        <p>{{insert paragraph about where to find projects.}}</p>
+					        <p>For each project, identify the main website or websites associated with the project.  Enter those URLS into the <a href="http://wave.webaim.org/">Web Accessibility Evaluation Tool</a> where it says "<i>Web page address...</i>", and take look at the results.</p>
+					        <p>Are there items labelled as "errors" or "contrast errors"?  If so, you can proceed to the next step.  If not, try another project (or another page or site of the same project).</p>
+
+					</section>
+					
+					<section>
+					    <h2>Step 3: Make a List of Changes to Make</h2>
+					    <p class="float-left">Using the results of the evaluation tool, make a list of changes to be made.  You should probably group these by types of changes.  {{ More advice. }}  {{ Link to example of report, either on tracker or in etherpad.  (Could use campus.openhatch.org.) }}</p>
+				    </section>
+				    
+				    <section>
+					    <h2>Step 4: Submit Issue</h2>
+					    <p class="float-left">Take your notes and add them to the project's issue tracker as an issue.  If you plan on trying to make the changes yourself, say so in the issue.</p>
+					    <p class="float-left">If you don't plan on trying to make changes to the issue, you can skip to <a href="#/15">the last slide</a>.</p>
+				    </section>
+				    
+				    <section>
+					    <h2>Step 5: Fixing the Issues</h2>
+					    <p class="float-left">Fixing the issues will depend on the project structure and the type of project.  You may need to set up a development environment, and you will definitely need to learn how to submit changes back to the project.  Please ask a mentor if you run into any difficulties!</p>
+					    <p class="float-left">We'll now go over some of the most common accessibility issues the evaluation tool reports, and how to fix them.  The set of issues to fix in a given project will likely be different.  Information on how to fix issues is also available on the evaluation tool itself, by clicking the links labelled "More Information".</p>
+				    </section>
+				    
+				   <section>
+					    <h2>Issue #1: No Alternative Image Text</h2>
+					    <p class="float-left">"Alternative text is text associated with an image that serves the same purpose and conveys the same essential information as the image. In situations where the image is not available to the reader, perhaps because they have turned off images in their web browser or are using a screen reader due to a visual impairment, the alternative text ensures that no information or functionality is lost. Absent or unhelpful alternative text can be a source of frustration for visually impaired users of the Web." - <a href="http://en.wikipedia.org/w/index.php?title=Wikipedia:Alternative_text_for_images&oldid=611402911">Wikipedia</a></p>
+				    </section>
+				    
+				      <section>
+					    <h2>How to fix it</h2>
+					    <p class="float-left">For each image that is missing alternative text, try to summarize the image as briefly as possible.  If you don't recognize the image, you can ask others what they think the picture represents.  For logos, diagrams, or screenshots it may be especially valuable to ask members of the project's community.  <a href="https://www.tineye.com/">Tin Eye</a> may also be useful for identifying images.</p>
+					    <p class="float-left">Add your summary to the image using the "alt" attribute.  If you are unfamiliar with HTML, these three pages should get you up to speed: <a href="http://www.htmldog.com/guides/html/beginner/gettingstarted/">Getting Started</a>, <a href="http://www.htmldog.com/guides/html/beginner/tags/">Tags</a>, <a href="http://www.htmldog.com/guides/html/beginner/images/">Images</a>.  As always, feel free to ask a mentor for help!</p>
+				    </section>
+				    
+				    <section>
+					    <h2>Issue #2: Empty/Missing/Too Many Form Labels</h2>
+					    <p class="float-left">Form labels are required by assistive technology to help site users interact with forms.  A missing or empty label may make it impossible for some users to correctly use the form, whereas multiple labels may be confusing.</p>
+					    <p class="float-left">To fix this issue, add text that describes what the associated form control does.  ("<a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.2.1">Form controls</a>" are the interactive elements of a form.  Not all form controls need labels - for instance, image, submit, reset, button, or hidden form controls do not.)  This should be added to the "label" attribute, which you may need to create.
+				    </section>
+				    
+				    <section>
+					    <h2>Issue #3: Lack of High Contrast</h2>
+					    <p class="float-left">Text that does not have <a href="http://webaim.org/articles/visual/lowvision#highcontrast">high contrast</a> to its background can be difficult for people with visual impairments to read.</p>
+					    <p class="float-left">To fix this issue, you will likely need to edit the css files that control the coloring of one or more pages. Before submitting your changes, it may be helpful to experiment with the colors and send screenshots to community members to see what they think.</p>
+				    </section>
+				    
+				    <section>
+				        <h2>More issues</h2>
+				        <p class="float-left">In addition to the warnings and alerts the evaluation tool will give, you can also give feedback and/or make changes about:</p>
+				        <ul>
+				        <li><a href="http://webaim.org/articles/visual/lowvision#magnifiers">Make sure that text contained in images is duplicated outside of images.</a></li>
+				        <li><a href="http://webaim.org/articles/visual/lowvision#horizontalscrolling">Use percentages rather than absolute units to control page layout.</a></li>
+				        <li><a href="http://www.w3.org/WAI/tutorials/tables/">Using "scope", "id", and "headers" to help read tables.</a></li>
+				        </ul>
+				        
+                    </section>
+				    
+				    <section>
+					    <h2>Step 6: Submit Your Changes</h2>
+					    <p class="float-left">Submit your changes as patches or pull requests to the project.  Reference the issue that you added in the submission (Github makes this <a href="https://github.com/blog/957-introducing-issue-mentions">fairly easy</a>).  Depending on how many changes you made and the size of the project, you may want to put different types of changes into different pull requests.  If you can, ask a maintainer how they'd prefer you to submit changes.</p>
+				    </section>
+				    
+				    <section>
+					    <h2>All Done?</h2>
+					    <p class="float-left">Make sure to record your contribution.  {{ HOW? }}</p>
+					    <p class="float-left">You can repeat this task with a new project, or move on to a different task.</p>
+				    </section>
+				    
+			</div>
+
+        </div>
+
+        <script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+    </body>
+
+</html>
