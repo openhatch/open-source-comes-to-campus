@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>What is version control?</title>
+
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/reveal.min.css">
+		
+        <link rel="stylesheet" href="../css/theme/lessons.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+		
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+			    	<section class="title-page">
+					    <h2>What is version control?</h2>	
+					    <!-- This is self-guided version, move it to self-guided.html and adapt to presenter-led -->
+				    </section>
+				    
+				    <section>
+				        <h2>Let's imagine...</h2>
+				        <p class="float-left">You and some classmates have just been assigned a paper to write.  One of you volunteers to write a first draft, which they send to everybody else.  You and two other classmates, separately, add some paragraphs and correct some spelling errors in the text. How do you synthesize those changes into a single, up-to-date document?  By hand?</p>
+				        <p class="float-left">And what if you make a change and then decide that you prefer the old version?</p>
+				    </section>
+				    
+				    <section>
+				        <h2>Version control to the rescue!</h2>
+				        <p class="float-left">Version control helps you keep track of the specific changes that get made.  It lets you merge contributions from multiple people, and switch back to previous versions of the project easily.</p>
+				    </section>
+				    
+				    <section>
+				        <p class="float-left">This is pretty helpful for a small class project.</p>
+				        <p class="float-left">But imagine how vital it is to larger projects.  Like, say, an open source project with millions of contributors and billions of users.</p>
+				        <p class="float-left">Such a project exists!  Can you guess what it is?</p>
+				    </section>
+				    
+				    <section>
+				        <img src="../images/wikipedia_logo.png">
+				        <!-- Wikipedia!  In notes, give guide for what to do in Wikipedia, going downwards.  For SG version, tell them how to interact with Wikipedia.  Similar to the IRC thing. -->
+				    </section>
+				    
+				    <section>
+				        <h2>Taking a closer look</h2>
+				        <p class="float-left">Let's <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">visit Wikipedia</a>.</p>
+				        <p class="float-left">Every Wikipedia page, including the main page, has a special view.  You can find it in the top right-hand corner of the screen: it says "View History".  Pick a page -- any page -- and find the "View History" tab.  Then click it.</p>
+				        <img src="../images/view_history.png">
+				          
+				    </section>
+				    
+				    <section>
+				        <p class="float-left">This page shows you every change ever made to the page.  These changes are saved as "diffs".  Diffs are a list of the changes or differences between two versions of a file.  If you want to learn more about diffs, try the OpenHatch <a href="https://openhatch.org/missions/diffpatch" target="_blank">diff and patch training mission</a>.</p>
+				        <p class="float-left">Wikipedia displays diffs in its own particular way.  Select two revisions and click "compare selected revisions" to view it.</p>
+				        <img src="../images/compare_revisions.png">
+				    </section>
+				    
+				    <section>
+    				    <a href="http://en.wikipedia.org/w/index.php?title=&diff=602327743&oldid="><img src="../images/diff.png"></a>
+	    			    <p>(Click on the image to go to the diff itself.)</p>
+				    </section>
+
+				    <section>
+				        <p>The diff includes information about:</p>
+				        <ul>
+				        	<li>what got added (in blue) and what got deleted (in yellow)</li>
+				            <li>the lines of the documents the deletions were on</li>
+				            <li>who made the change</li>
+				            <li>when they made it</li>
+				            <li>why they made it - the "commit message"</li>
+				            <li>how to view the previous version and the new version <br/>(click on the bolded "revision as of...")</li>
+				        </ul>
+				    </section>	
+	    
+				    <section>
+				        <p class="float-left">That's Wikipedia.  It runs on a piece of software called <a href="http://en.wikipedia.org/wiki/MediaWiki">Mediawiki</a>.  That's one version control system.  What others are there?  </p>
+				        <p class="float-left">And what's the difference between a version control system and a repository and a host, anyway?</p>
+				    </section>
+				    
+				    <section data-background="../images/vc_chart.png">
+				    </section>		
+				    
+				    <section data-background="../images/vc_chart.png" style="background: rgba(255,255,255,0.98)" class="pad-overlay">	    
+				        <p class="float-left">What does this chart mean?</p> 
+				        <p class="float-left">At the top are a few different kinds of version control systems, including the popular system git.  These are software tools which can be used anywhere.</p>
+				        <p class="float-left">Hosts are servers that can run different kinds of version control systems and host your repositories.  Some hosts support multiple kinds of version control systems, like Bitbucket which supports Mercurial and Git.  Others support only one kind of version control system, like Github which only supports Git.</p>
+				    </section>
+				    
+				    <section data-background="../images/vc_chart.png" style="background: rgba(255,255,255,0.98)" class="pad-overlay">	    
+				        <p class="float-left">There are multiple accounts on each host.  For instance, on Github there is an OpenHatch account, and a White Host account, and many more.</p>
+				        <p class="float-left">These accounts own repositories.  As many people as want to can create copies of repositories, but there can be only one owner.  If you want, you can keep multiple copies of the same repositories on different hosts that support the same version control system.  For instance, oh-mainline exists on Github, and on our servers, and on many people's laptops!</p>
+				    </section>
+				    
+				   	<section data-background="../images/vc_chart.png">
+				    </section>		
+				    
+				    <section>
+				        <p class="float-left">Version control works on more than just code!  You can use it to host <a href="https://github.com/search?q=poetry">poetry</a>, <a href="https://github.com/search?q=resume&type=Repositories&ref=searchresults">resumes</a>, <a href="https://github.com/bundestag/gesetze">laws</a> and more.  What else can you find?</p>
+				    </section>
+				
+			</div>
+
+        </div>
+
+        <script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+    </body>
+
+</html>

@@ -161,4 +161,7 @@ body {
     background-color:white;
 }
 
-
+.reveal .pad-overlay p {
+    padding-left:20px;
+    padding-right:20px;
+}
