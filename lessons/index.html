@@ -26,20 +26,23 @@
 	
 <body>
 <div class="wrapper">
-	<div class="intro">
+	<div class="doc">
+	    <h1>Open Source Comes to Campus Curriculum</h1>
 		            <p>This page contains links to all of the curricula used at Open Source Comes to Campus events.  Its main use is as a source for event planners to browse, compare, and select activities for their workshops.  Overwhelmed by the options or not sure how these activities fit together?  Check out the sample schedules.</p>
-	                <p>Attendees of specific events may find the <a href="">event-specific schedules link</a> useful.</p>
-	                <p>Some activities have multiple versions, usually <b>self-guided</b> or <b>presenter-led</b>.  Some activities are specifically designed for <b>small mentored groups</b> but typically, if your event is using small mentored groups, they will use self-guided or presenter-led activities based on the particular mentor's comfort level.</p>
-	                <p>To add new activites, please leave a comment in the issue tracker, contact hello@openhatch.org and/or submit your changes as a pull request.</p>
+		            <p>(You might also find this <a href="http://example-osctc-site.github.io/curriculum/">example event schedule</a> useful.)</p>
+	                <p>Many activities have multiple versions, usually <b>self-guided</b> or <b>presenter-led</b>.  Some activities are specifically designed for small mentored groups, and those are marked as such in the notes, but many activities can be adapted to small groups.</p>
+	                <p>To add new activites, please leave a comment <a href="https://github.com/openhatch/open-source-comes-to-campus/labels/Curriculum">in the issue tracker</a>, contact hello@openhatch.org and/or submit your changes as a pull request.</p>
 	</div>
 	
 	<div class="control-wrap">
 	
     	<div class="controls">
+    	                <h3>Miscellaneous</h3>
                         <ul>
                             <li class="filter" data-filter="all">View All</li>
                             <li class="filter" data-filter="ready">View Only Ready-to-run Activities</li>
-                            <li class="filter" data-filter="self-guided">View All Activities With a Self-Guided Version</li>
+                            <li class="filter" data-filter="needswork">View Only Activities "In Construction"</li>
+                            <li class="filter" data-filter="self-guided">View Only Self-Guided Activities</li>
                         </ul>
         </div>
 	
@@ -70,110 +73,143 @@
     <ul id="Grid">
 
                 
-                <li class="mix intro standard self-guided sgfd ready">
+                <li class="mix intro standard sgfd short self-guided ready">
                     <h2>Laptop Setup</h2>
                     <p>Prepares laptop for later activities.</p>
-                    <p>Typically, this takes about 15-20 minutes when done in person, though most attendees finish quickly.  Can be done before an event to save time.  Requires internet connection.</p>
-                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Laptop_setup">self-guided</a> (<b>bit.ly/laptop-setup</b>); can be done in small groups or with a single presenter as well, by walking through the self-guided steps together.</p>
-                        
+                    <p>View: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Laptop_setup">self-guided version</a></p>
+                    <p>Notes: Can be done in small groups or with a single presenter as well, by walking through the self-guided steps together.  Typically, this takes about 15-20 minutes when done in person, though most attendees finish quickly.  Can be done before an event to save time.</p>
                 </li>
+                
                 <li class="mix intro standard short ready self-guided sgfd">
                     <h2>What is Open Source?</h2>
                     <p>Defines open source, talks about popular projects, highlights FLOSS values.</p>
-                    <p>Takes approximately 20 minutes.  Presenter-led version can be done without internet if downloaded ahead of time.</p>
-                    <p>Links: <a href="./what-is-open-source/#/">presenter-led</a>, <a href="./what-is-open-source/self-guided.html">self-guided</a></p>
-                    
+                    <p>View: <a href="./what-is-open-source/#/">presenter-led version</a>, <a href="./what-is-open-source/self-guided.html">self-guided version</a></p>
+                    <p>Notes: Takes approximately 20 minutes.</p>
                 </li>
-                <li class="mix intro">
-                    <h2>Ice-breakers</h2>
-                    <p>Coming soon.</p>
-                </li>
-               
-                <li class="mix communication standard self-guided sgfd">
-                    <h2>Communication Norms</h2> 
-                    <p>Links: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/social-norms/index.html">presenter-led</a>, <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/social-norms/self-guided.html">self-guided</a>.</p>
-                </li>
+                
                 <li class="mix communication ready standard self-guided sgfd">
                     <h2>Communication Tools</h2>
                     <p>Introduces mailing lists, IRC and issue trackers.</p>
-                    <p>Usually takes about 25 minutes.  Easy to edit down to something shorter by removing activities or sections.</p>
-                    <p>Links: <a href="./comm-tools/#/">presenter-led</a>, <a href="./comm-tools/self-guided.html">self-guided</a></p>
+                    <p>Links: <a href="./comm-tools/#/">presenter-led version</a>, <a href="./comm-tools/self-guided.html">self-guided version</a></p>
+                    <p>Notes: Takes approximately 25 minutes.</p>
+                    
                 </li>
                  
                  <li class="mix communication standard ready self-guided sgfd">
                     <h2>Bug Comprehension</h2>
                     <p>Interactive activity to help read an issue in an issue tracker.</p>
-                    <p>Typically takes about 10-15 minutes.</p>
-                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Tools/Communication">self-guided (or paired)</a> version only.</p>
+                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Tools/Communication">self-guided (or paired) version</a>.</p>
+                    <p>Notes: Typically the activities is introduced to the group, students work on it in pairs, and then the group as a whole discusses it.  Takes approximately 15 minutes.</p>
                 </li>
+                
+                <li class="mix communication standard self-guided sgfd">
+                    <h2>Communication Norms</h2> 
+                    <p>'Tips and tricks' for communicating with open source projects.</p>
+                    <p>Links: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/social-norms/index.html">presenter-led</a>, <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/social-norms/self-guided.html">self-guided</a>.</p>
+                    <p>Notes: Takes approximately 5 minutes..</p>
+                </li>
+                
                 <li class="mix version-control standard ready self-guided sgfd">
                     <h2>What is version control?</h2>
                     <p>Introduces version control as a concept, using Wikipedia as an example.</p>
-                    <p>Typically takes about 10-15 minutes.</p>
-                    <p>Links: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/what-is-version-control/index.html">presenter-led</a>, <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/what-is-version-control/self-guided.html">self-guided</a>.</p>
-                </li>
-                 <li class="mix version-control ready self-guided">
-                    <h2>Diff and Patch</h2>
-                    <p>Introduces diffing and patching as the building blocks of version control.  Not a part of the standard curriculum, but interesting if you have the time!</p>
-                    <p>Links: <a href="https://openhatch.org/missions/diffpatch">self-guided</a>, <a href="https://openhatch.org/wiki/OSCTC/Tools/Shauna_old_version#Diff_and_Patch_Demo">presenter-led</a>.</p>
-                </li>
-                <li class="mix version-control standard ready self-guided sgfd">
-                    <h2>Git</h2>
-                    <p>There are many options for learning how to use git & github.  There are currently three OpenHatch-created options: a <a href="http://openhatch.org/missions/git">self-guided version</a> (teaches git only), a <a href="">small mentored group version</a> and a <a href="">presenter-led version</a>.  Of these, we recommend the small mentored group version. </p><p> There are a number of online curricula for teaching git which you may also want to consider: (list here).</p> 
+                    <p>View: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/what-is-version-control/index.html">presenter-led version</a>, <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/what-is-version-control/self-guided.html">self-guided version</a>.</p>
+                    <p>Notes: Typically takes about 10-15 minutes.</p>
+
                 </li>
                 
-                <li class="mix community ready">
+                <li class="mix version-control ready self-guided">
+                    <h2>Diff and Patch</h2>
+                    <p>Introduces diffing and patching as the building blocks of version control.</p>
+                    <p>View: <a href="https://openhatch.org/missions/diffpatch">self-guided version</a>, <a href="https://openhatch.org/wiki/OSCTC/Tools/Shauna_old_version#Diff_and_Patch_Demo">presenter-led version</a>.</p>
+                    <p>Notes: Takes approximately 15 minutes. Not a part of the standard curriculum, but interesting if you have the time!</p>
+                </li>
+                
+                <li class="mix version-control standard ready self-guided sgfd">
+                    <h2>Git Activity</h2>
+                    <p>Hands on activity teaching students to use git.</p>
+                    <p>View: <a href="http://openhatch.org/missions/git">self-guided version</a>, <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Practicing_Git/Students">small groups/presenter led version</a></p>
+                    <p>Notes: There are many options for learning how to use git & github.  The self-guided OpenHatch version teaches git only. The small groups/presenter led version teaches git and Github, and has a more advanced component.  We recommend the small groups version.  There are many additional git/Github tutorials that you can use as well.</p> 
+                </li>
+                
+                <li class="mix community ready needswork">
                     <h2>History and Ethics of Free Software</h2>
-                    <p>We currently have a presenter-led version which we're not terribly satisfied with.  We're working on improving it and creating a self-guided version as well.</p>
-                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/History_and_Ethics_of_Free_Software/Ethics_history_talk">presenter-led</a>.</p>
+                    <p>The history and ethics of free software.  :)</p>
+                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/History_and_Ethics_of_Free_Software/Ethics_history_talk">presenter-led version</a>.</p>
+                    <p>Notes: we currently have a presenter-led, lecture-style version which we're not terribly satisfied with.  We're working on improving it and creating a self-guided version as well.</p>
                 </li>
-                <li class="mix community ready standard">
+                
+                <li class="mix community ready standard needswork">
                     <h2>Career Panel</h2>
-                    <p>Career panels are an excellent opportunity for students to learn more about what being an open source professional is like.  If there are enough in person mentors we recommend running an in-person panel.  We can also arrange a remote career panel via hangouts (or a similar tool).</p>
-                    <p>Links: you can read more about our career panels, including questions to ask, <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel">here</a>.
+                    <p>Open source professionals answer questions from students.</p>
+                    <p>View: panel info can be found <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel">here</a>.
+                    <p>Notes: Career panels are an excellent opportunity for students to learn more about what being an open source professional is like.  If there are enough in person mentors we recommend running an in-person panel.  We can also arrange a remote career panel via hangouts (or a similar tool).  We are working on constructing a self-guided version of the career panel using video interviews.</p>
+                    
                 </li>
-                <li class="mix contributions-workshop ready standard self-guided sgfd">
+                
+                <li class="mix contributions-workshop ready standard short self-guided sgfd">
                     <h2>Finding a Project</h2>
                     <p>Walks people through the steps of finding a project to contribute to.</p>
-                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Finding_a_Project">self-guided</a></p>
+                    <p>Links: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Finding_a_Project">self-guided version</a></p>
                 </li>
                 
-                <li class="mix contributions-workshop">
-                    <h2>Merge Stories</h2>
-                    <p>Coming soon!</p>
-                </li>
-                
-                <li class="mix contributions-workshop self-guided sgfd ready">
+                <li class="mix contributions-workshop standard self-guided sgfd ready needswork">
                     <h2>Newcomer Tasks</h2>
-                    <p>These guides help newcomers make specific kinds of contributions which are suitable for a variety of projects.</p>
-                    <p>Links: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/newcomer-tasks/setup/#/">Improving Setup Instructions</a>; <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/newcomer-tasks/accessibility/#/">Improving Accessibility</a>; more coming soon!</p>
+                    <p>Teaches students how to do tasks which are well suited to newcomers.</p>
+                    <p>View: <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/newcomer-tasks/setup/#/">Testing Setup Instructions</a>; <a href="http://openhatch.github.io/open-source-comes-to-campus/lessons/newcomer-tasks/accessibility/#/">Improving Accessibility</a>; <a href="https://openhatch.org/w/index.php?title=Open_Source_Comes_to_Campus/Newcomer_Tasks/Issue_Tracker_Cleaning">Issue Tracker Cleaning</a></p>
+                    <p>These guides help newcomers make specific kinds of contributions which are suitable for a variety of projects. More coming soon!</p>
                 </li>
                 
-                <li class="mix contributions-workshop ready standard">
+                <li class="mix contributions-workshop needswork standard">
                     <h2>Project-focused Contributions</h2>
-                    <p>You can read about our past version of the workshop <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum#The_workshop_itself">here</a>, an updated version is coming soon.</p>
+                    <p>Framework for contributing to specific projects that have mentors at the event.</p>
+                    <p>View: You can read about our past version of the workshop <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum#The_workshop_itself">here</a>, an updated version is coming soon.</p>
                 </li>
 
-                 <li class="mix misc">
-                    <h2>Intro to the Command Line</h2>
+                <li class="mix intro needswork">
+                    <h2>At Home In Open Source</h2>
+                    <p>Expectations-setting activities + impostor syndrome workshop.</p>
+                    <p>Coming soon.</p>
+                </li>
+                
+                <li class="mix contributions-workshop needswork">
+                    <h2>Merge Stories</h2>
+                    <p>Students can read stories written by open source contributors about past contributions they've made.</p>
                     <p>Coming soon!</p>
                 </li>
-                 <li class="mix misc">
+                
+                 <li class="mix misc ready">
+                    <h2>Intro to the Command Line</h2>
+                    <p>View: <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Harvard/Laptop_setup#Goal_.232:_practice_navigating_from_the_command_line">self-guided version</a>.</p>
+                    <p>Notes: Typically cut from our events for time, this has been folded into the laptop setup (sort of).</p>
+                </li>
+                
+                 <li class="mix misc advanced needswork">
                     <h2>Installing Linux</h2>
                     <p>Coming soon!</p>
                 </li>
-                <li class="mix misc">
-                    <h2>Impostor Syndrome (and other psychological barriers)</h2>
-                    <p>Coming soon!</p>
-                </li>
-                <li class="mix misc">
+                
+                <li class="mix misc advanced needswork">
                     <h2>Free/open source licensing</h2>
                     <p>Coming soon!</p>
                 </li>
+                
+                <li class="mix needswork advanced">
+                    <h2>Specific FOSS Communities</h2>
+                    <p>Notes: We hope to build 30-60 minute activities/self-guided lessons introducing students to areas of FOSS such as open hardware, open science, humanitarian FOSS, and more.</p>
+                    <p>Coming soon!</p>
+                </li>
+                
+                <li class="mix needswork advanced">
+                    <h2>Starting an open source project.</h2>
+                    <p>Notes: A how to guide for making your own work open source.</p>
+                    <p>Coming soon!</p>
+                </li>
+                
                 <li class="mix ready standard">
                     <h2>Wrap up</h2>
-                    <p>You can see our wrap-up guide <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum#Wrap_Up_2">here</a>.</p>
+                    <p>View: the organizer guide is <a href="https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum#Wrap_Up_2">here</a>.</p>
                 </li>
+                
                 <li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
       </ul>
 

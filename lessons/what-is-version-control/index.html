@@ -6,16 +6,15 @@
 
 		<title>What is version control?</title>
 
-
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="../css/reveal.min.css">
+		<link rel="stylesheet" href="../../static/reveal/css/reveal.min.css">
 		
-        <link rel="stylesheet" href="../css/theme/lessons.css" id="theme">
+        <link rel="stylesheet" href="../../static/reveal/css/theme/lessons.css" id="theme">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="../lib/css/zenburn.css">
+		<link rel="stylesheet" href="../../static/reveal/lib/css/zenburn.css">
 		
 		<!--[if lt IE 9]>
 		<script src="../lib/js/html5shiv.js"></script>
@@ -50,7 +49,7 @@
 				    </section>
 				    
 				    <section>
-				        <img src="../images/wikipedia_logo.png">
+				        <img src="../../static/images/wikipedia_logo.png">
 				        <aside class="notes">
 				             {{ If you press down on the next slide, you can view the "intro to Wikipedia" steps from the self-guided version.  I recommend that you actually leave the presentation and demo everything using a live Wikipedia page.}}
 				        </aside>
@@ -62,18 +61,18 @@
 				        <h2>Taking a closer look</h2>
 				        <p class="float-left">Let's <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">visit Wikipedia</a>.</p>
 				        <p class="float-left">Every Wikipedia page, including the main page, has a special view.  You can find it in the top right-hand corner of the screen: it says "View History".  Pick a page -- any page -- and find the "View History" tab.  Then click it.</p>
-				        <img src="../images/view_history.png">
+				        <img src="../../static/images/view_history.png">
 				          
 				    </section>
 				    
 				    <section>
 				        <p class="float-left">This page shows you every change ever made to the page.  These changes are saved as "diffs".  Diffs are a list of the changes or differences between two versions of a file.  If you want to learn more about diffs, try the OpenHatch <a href="https://openhatch.org/missions/diffpatch" target="_blank">diff and patch training mission</a>.</p>
 				        <p class="float-left">Wikipedia displays diffs in its own particular way.  Select two revisions and click "compare selected revisions" to view it.</p>
-				        <img src="../images/compare_revisions.png">
+				        <img src="../../static/images/compare_revisions.png">
 				    </section>
 				    
 				    <section>
-    				    <a href="http://en.wikipedia.org/w/index.php?title=&diff=602327743&oldid="><img src="../images/diff.png"></a>
+    				    <a href="http://en.wikipedia.org/w/index.php?title=&diff=602327743&oldid="><img src="../../static/images/diff.png"></a>
 	    			    <p>(Click on the image to go to the diff itself.)</p>
 				    </section>
 
@@ -96,7 +95,7 @@
 				        <p class="float-left">And what's the difference between a version control system and a repository and a host, anyway?</p>
 				    </section>
 				    
-				    <section data-background="../images/vc_chart.png">
+				    <section data-background="../../static/images/vc_chart.png">
 				        <aside class="notes">
 				            <p>What does this chart mean?</p> 
 				            <p>At the top are a few different kinds of version control systems, including the popular system git.  These are software tools which can be used anywhere.</p>
@@ -117,8 +116,8 @@
 
         </div>
 
-        <script src="../lib/js/head.min.js"></script>
-		<script src="../js/reveal.min.js"></script>
+        <script src="../../static/reveal/lib/js/head.min.js"></script>
+		<script src="../../static/reveal/js/reveal.min.js"></script>
 
 		<script>
 
@@ -139,20 +138,16 @@
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: '../../static/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../static/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../static/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../static/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../static/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../static/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
 		</script>
 
 	</body>
-</html>
-
-    </body>
-
 </html>
