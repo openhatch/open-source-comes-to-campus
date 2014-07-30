@@ -88,16 +88,17 @@ body{
 #Grid .mix{
 	display: none;
 	opacity: 0;
-	width: 325px;
+	width: 305px;
 	height: 300px;
 	vertical-align: top;
 	margin-bottom: 20px;
 	margin-left: 10px;
 	margin-right: 10px;
-	background: #ceed7e;
+	background: #C2EBFF;
 	color: black;
 	font-size: 30px;
 	text-align: center;
+	padding:10px;
 }
 
 #Grid .gap{
@@ -118,29 +119,37 @@ body{
 }
 
 .mix h2 {
-    margin: 10px 10px 10px 10px;
     font-size:24px;
 }
 
 .mix h4 {
-	margin: 10px 10px 10px 10px;
     font-size:18px;
     text-align: left;
     font-weight:none;
 }
 
 .mix p {
-    margin: 10px 10px 10px 10px;
 	width: 305px;
 	text-align: left;
-	line-height: 1.5;
-	font-size:14px;
+	line-height: 1.25;
+	font-size:16px;
+	padding:5px;
 }
 
-.intro p {
-    padding:5px;
+.doc p, .doc h1 {
+    padding:10px;
+}
+
+.doc h1 {
+    text-align:center;
 }
 
 .control-wrap {
+    padding:10px;
     text-align:center;   
 }
+
+h2, h3 {
+    padding:5px;
+}
+
