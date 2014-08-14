@@ -165,3 +165,8 @@ body {
     padding-left:20px;
     padding-right:20px;
 }
+
+.reveal .logo {
+    height:200px;
+    width:200px;
+}
