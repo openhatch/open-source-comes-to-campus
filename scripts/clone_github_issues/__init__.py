@@ -37,14 +37,14 @@ def copy_issue_to(repo_owner, repo_name, title, body):
     data = {'title': title,
             'body': body}
     response = requests.post(url, auth=_make_auth(), data=json.dumps(data))
-    assert response.status_code == 201
+    assert response.status_code == 201, response.status_code
 
 def make_repo(repo_owner, repo_name, for_org=True):
     assert for_org # NOTE: URL below doesn't work for non-org repos
     url = 'https://api.github.com/orgs/%s/repos' % (
         urllib.quote(repo_owner),)
     response = requests.post(url, auth=_make_auth(), data=json.dumps({'name': repo_name}))
-    assert response.status_code == 201 # 201 means created
+    assert response.status_code == 201, response.status_code
 
 
 def repo_exists(repo_owner, repo_name):
