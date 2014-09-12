@@ -2,7 +2,6 @@ import requests
 import requests.auth
 import urllib
 import json
-import sh
 import tempfile
 import subprocess
 
@@ -107,8 +106,10 @@ def interactive_prepare_event(event_name, how_many_to_create):
     ### prepare a git clone of template repo
     tempdir = tempfile.mkdtemp(prefix='git_clone_')
     print "Using %s as temp directory for clone..." % (tempdir,)
-    sh.git('clone', 'git@github.com:%s/%s.git' % (from_owner, from_repo),
-           tempdir, _out=_print)
+    print subprocess.check_output(
+        ['git', 'clone',
+         'git@github.com:%s/%s.git' % (from_owner, from_repo),
+         tempdir])
 
     for i in range(how_many_to_create):
         repo_number = i+1 # This is because we use 1-indexing in
