@@ -69,13 +69,15 @@ def _print(s):
 ### FIXME: Someone needs to go through this and make the function names make
 ### sense. Sorry to everyone who reads this before I do that.
 
-def interactive_prepare_event(event_name, how_many_to_create):
+def interactive_prepare_event(
+        event_name,
+        how_many_to_create,
+        from_owner,
+        from_repo):
     print ("Now is a good time to go create %d Github organizations, "
            "starting with '%s-'." % (how_many_to_create, event_name))
     raw_input("Press enter when you have done that...")
 
-    from_owner = 'openhatch'
-    from_repo = 'github-website-editing-demo'
     print ("Great! Now I will go copy GitHub issues from the %s organization "
            "and its %s repo." % (from_owner, from_repo))
 
@@ -134,6 +136,28 @@ def interactive_prepare_event(event_name, how_many_to_create):
     print "Okay! It's all done."
 
 
+def get_parent_github_repo():
+    DEFAULT_USERNAME = 'openhatch'
+    DEFAULT_REPO = 'github-website-editing-demo'
+
+    # Ask...
+    inp = raw_input(
+        "What git repo do you want to clone, issues and all? Press enter to"
+        " accept the default, which is %s/%s, or provide your own. >" % (
+            DEFAULT_USERNAME, DEFAULT_REPO))
+
+    # Handle the empty input, aka defaults
+    if not inp.strip():
+        return (DEFAULT_USERNAME, DEFAULT_REPO)
+
+    # Syntax-check...
+    if inp.count('/') != 1:
+        print "You have to specify it in the format of githubusername/githubreponame."
+        return get_parent_github_repo()
+
+    # OK! Seems legit.
+    return inp.strip().split('/')
+
 def main():
     print "Testing that your credentials work..."
     sanity_check_creds(_make_auth())
@@ -145,4 +169,9 @@ def main():
                            "columbia.openhatch.org, type columbia here. >")
     how_many = int(raw_input("How many git repositories do you want? "
                              "I recommend no fewer than 3. Up to you, though. >"))
-    interactive_prepare_event(event_name, how_many)
+    from_owner, from_repo = get_parent_github_repo()
+    interactive_prepare_event(
+        event_name,
+        how_many,
+        from_owner,
+        from_repo)
