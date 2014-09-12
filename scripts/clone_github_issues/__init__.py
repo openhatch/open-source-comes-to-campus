@@ -108,7 +108,7 @@ def interactive_prepare_event(event_name, how_many_to_create):
     print "Using %s as temp directory for clone..." % (tempdir,)
     print subprocess.check_output(
         ['git', 'clone',
-         'git@github.com:%s/%s.git' % (from_owner, from_repo),
+         'https://github.com/%s/%s' % (from_owner, from_repo),
          tempdir])
 
     for i in range(how_many_to_create):
