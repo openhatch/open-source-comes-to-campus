@@ -70,7 +70,10 @@ https://github.com/settings/applications
 Look for the "Personal Access Tokens" section, and click "Create new token."
 
 For the "Token description" type something that will remind you why
-you created it, like "Practicing Git app".
+you created it, like "Practicing Git app". Make sure to check all the
+boxes to grant it total power over your account. (Note that it would be
+preferable to only check the boxes that matter! Unfortunately we don't
+know which boxes specifically to tell you to check.)
 
 Then you will see your token and a button to copy it to the clipboard. Do that,
 and then in *this folder*, create a new file called settings.txt with just that
