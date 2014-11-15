@@ -1,6 +1,6 @@
 This is the repository for Open Source Comes to Campus, an event series designed by [OpenHatch](http://openhatch.org/).
 
-You are free to use these materials however you like.  Everything in the repository is licensed [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/).
+You are free to use these materials however you like. The easiest way to get all the materials in this repository is to run  `git clone https://github.com/openhatch/open-source-comes-to-campus` to make a copy on your computer. Everything in the repository is licensed [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/).
 
 Want to contribute to Open Source Comes to Campus?  You can:
 
