@@ -1,0 +1,1 @@
+The screenshots are for this page: https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Harvard/Laptop_setup/Windows_git
