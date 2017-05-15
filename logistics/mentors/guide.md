@@ -206,7 +206,7 @@ Don't assume that an attendee knows something, no matter how commonplace or obvi
 
 Relatedly, even if a tool or concept seems fundamental to you, don't show surprise or make a big deal out of it when a student hasn't heard of it.  Our attendees come from all backgrounds, including non-CS ones.  And regardless of background, everyone has a first time they hear about something.  Make that experience affirming and enjoyable, not embarrassing.
 
-Avoid grabbing the keyboard.  If at all possible, walk someone through their problem verbally.  If you really need to type to figure something out, ask first and be careful to not be invasive about the other person's physical space if they do give permission.
+Avoid grabbing the keyboard.  If at all possible, walk someone through their problem verbally.  If you really need to type to figure something out, we recommend you open a text editor on your own computer, set the font to be enormous, and type on your own computer. If somehow you must type on the student's computer, ask first and be careful to not be invasive about the other person's physical space if they do give permission.
 
 ## <a name="acknowledgements">Acknowledgements</a>
 
