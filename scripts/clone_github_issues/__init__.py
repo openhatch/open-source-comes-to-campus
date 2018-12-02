@@ -86,7 +86,7 @@ def interactive_prepare_event(
 
     print "And then, I will copy them..."
 
-    for i in range(how_many_to_create):
+    for i in range(how_many_to_create + 1):
         repo_number = i+1 # This is because we use 1-indexing in
         # the name of the repo, e.g. columbia-1.github.io
 
